@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- WARNING: index.html serves as a template. If you want to change something, change it there -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- We disable 'user-scalable'. As we are working with a map, the user might zoom in using a popup, close the popup and _not_ be able to zoom out again. -->
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes" name="viewport" >
+    <!-- CSP -->
+    <link href="./css/mobile.css" rel="stylesheet"/>
+    <link href="./css/openinghourstable.css" rel="stylesheet"/>
+    <link href="./css/tagrendering.css" rel="stylesheet"/>
+    <link href="css/ReviewElement.css" rel="stylesheet"/>
+    <link href="./css/index-tailwind-output.css" rel="stylesheet"/>
+    <link href="./css/wikipedia.css" rel="stylesheet"/>
+    <meta content="website" property="og:type">
+
+    <!-- THEME-SPECIFIC -->
+    <!-- Every theme gets their own html page, this is created by a script; this part will be removed except for the index -->
+    <title>MapComplete</title>
+    <link href="./assets/add-ad16ed3c.svg" rel="icon" sizes="any" type="image/svg+xml">
+    <meta content="./assets/SocialImage.png" property="og:image">
+    <meta content="MapComplete - editable, thematic maps with OpenStreetMap" property="og:title">
+    <meta content="MapComplete is a platform to visualize OpenStreetMap on a specific topic and to easily contribute data back to it."
+          property="og:description">
+
+    <link href="./assets/generated/images/assets_svg_mapcomplete_logo512.png" rel="apple-touch-icon" sizes="512x512">
+    <link href="./assets/generated/images/assets_svg_mapcomplete_logo384.png" rel="apple-touch-icon" sizes="384x384">
+    <link href="./assets/generated/images/assets_svg_mapcomplete_logo192.png" rel="apple-touch-icon" sizes="192x192">
+    <link href="./assets/generated/images/assets_svg_mapcomplete_logo180.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="./assets/generated/images/assets_svg_mapcomplete_logo152.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="./assets/generated/images/assets_svg_mapcomplete_logo144.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="./assets/generated/images/assets_svg_mapcomplete_logo128.png" rel="apple-touch-icon" sizes="128x128">
+    <link href="./assets/generated/images/assets_svg_mapcomplete_logo120.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="./assets/generated/images/assets_svg_mapcomplete_logo96.png" rel="apple-touch-icon" sizes="96x96">
+    <link href="./assets/generated/images/assets_svg_mapcomplete_logo72.png" rel="apple-touch-icon" sizes="72x72">
+
+    <!-- THEME-SPECIFIC-END-->
+
+  <script type="module" crossorigin src="./assets/theme-0ba7843e.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/Utils-498bb79d.js">
+  <link rel="modulepreload" crossorigin href="./assets/index-3f10102a.js">
+  <link rel="modulepreload" crossorigin href="./assets/LocalStorageSource-4f66d5e4.js">
+  <link rel="modulepreload" crossorigin href="./assets/Translation-5455689e.js">
+  <link rel="modulepreload" crossorigin href="./assets/_commonjsHelpers-de833af9.js">
+  <link rel="modulepreload" crossorigin href="./assets/tw-merge-e1aa18e9.js">
+  <link rel="modulepreload" crossorigin href="./assets/ToSvelte-5d5f66c4.js">
+  <link rel="modulepreload" crossorigin href="./assets/Constants-399bdbe1.js">
+  <link rel="modulepreload" crossorigin href="./assets/Dropdown-dedab849.js">
+  <link rel="modulepreload" crossorigin href="./assets/ariaLabel-54fcd223.js">
+  <link rel="modulepreload" crossorigin href="./assets/Loading-40d8de62.js">
+  <link rel="modulepreload" crossorigin href="./assets/OsmConnection-2206c31f.js">
+  <link rel="modulepreload" crossorigin href="./assets/Tr-a1b201b7.js">
+  <link rel="modulepreload" crossorigin href="./assets/LanguagePicker-6d4b436d.js">
+  <link rel="modulepreload" crossorigin href="./assets/MapLibreAdaptor-49ec2143.js">
+  <link rel="modulepreload" crossorigin href="./assets/Checkbox-0d97793e.js">
+  <link rel="modulepreload" crossorigin href="./assets/BackButton-a44a967b.js">
+  <link rel="modulepreload" crossorigin href="./assets/Add-7798a556.js">
+  <link rel="modulepreload" crossorigin href="./assets/TabbedGroup-6e1a3e0a.js">
+  <link rel="modulepreload" crossorigin href="./assets/FeatureSwitchState-d3b41732.js">
+  <link rel="modulepreload" crossorigin href="./assets/Community-cde6897c.js">
+  <link rel="modulepreload" crossorigin href="./assets/Filterview-064356ec.js">
+  <link rel="modulepreload" crossorigin href="./assets/PrivacyPolicy-ffd0f9fb.js">
+  <link rel="modulepreload" crossorigin href="./assets/ThemeViewGUI-015cfec5.js">
+  <link rel="modulepreload" crossorigin href="./assets/AllKnownLayouts-e56a1b33.js">
+  <link rel="stylesheet" href="./assets/ThemeViewGUI-8d775733.css">
+  <link rel="stylesheet" href="./assets/TabbedGroup-2a60f0e3.css">
+</head>
+<body tabindex="-1">
+
+
+<div class="h-screen" id="maindiv">
+    <div id="default-main h-full">
+        <div class="w-full h-screen flex flex-col items-center justify-between  p-8">
+            <div class="w-full h-full flex flex-col items-center">
+
+                <div id="default-title">
+                    Loading MapComplete, hang on...
+                </div>
+
+                <p class="text-xl" id="descriptions-while-loading">
+                    <!-- DESCRIPTION START -->
+                    MapComplete is an easy to use map viewer and map editor
+                    <!-- DESCRIPTION END -->
+                </p>
+                <p>
+                    Made with OpenStreetMap
+                </p>
+            </div>
+
+            <div class="flex justify-between items-start w-full">
+                
+            <!-- IMAGE-START -->
+            <img aria-hidden="true" class="p-8 h-32 w-32 self-start" src="./assets/add-ad16ed3c.svg">
+            <!-- IMAGE-END -->
+                <div class="h-min subtle"> 
+                Version
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div aria-hidden="true" id="belowmap" class="absolute top-0 left-0 -z-10">Below</div>
+<script src="./src/UI/RemoveOtherLanguages.js"></script>
+
+
+<script async data-goatcounter="https://pietervdvn.goatcounter.com/count" src="https://gc.zgo.at/count.js" crossorigin="anonymous" integrity="sha384-nx5O+otcqJoqMhdDt8jUzmia6ng81Z5zZozYr69TzPkOLjVhLKMxu5zHCV9/0MPn"></script>
+
+    
+
+</body>
+</html>
