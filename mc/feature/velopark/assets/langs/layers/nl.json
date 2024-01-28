@@ -385,8 +385,8 @@
                 "render": {
                     "special": {
                         "question": "In welke taal is de spraak van deze geldautomaat?",
-                        "render_list_item": "Deze geldautomaat heeft spraak in {language():font-bold}",
-                        "render_single_language": "Deze automaat heeft spraak in {language():font-bold}"
+                        "render_list_item": "Deze geldautomaat heeft spraak in {language()}",
+                        "render_single_language": "Deze automaat heeft spraak in {language()}"
                     }
                 }
             }
@@ -3699,8 +3699,8 @@
                 "render": {
                     "special": {
                         "question": "In welke talen heeft deze lift gesproken tekst?",
-                        "render_list_item": "Deze lift heeft gesproken tekst in het {language():font-bold}",
-                        "render_single_language": "Deze lift heeft gesproken tekst in het {language():font-bold}"
+                        "render_list_item": "Deze lift heeft gesproken tekst in het {language()}",
+                        "render_single_language": "Deze lift heeft gesproken tekst in het {language()}"
                     }
                 }
             },
@@ -3708,8 +3708,8 @@
                 "render": {
                     "special": {
                         "question": "In welke talen heeft deze lift voelbaar schrift (braille)?",
-                        "render_list_item": "Deze lift heeft voelbaar schrift in het {language():font-bold}",
-                        "render_single_language": "Deze lift heeft voelbaar schrift in het {language():font-bold}"
+                        "render_list_item": "Deze lift heeft voelbaar schrift in het {language()}",
+                        "render_single_language": "Deze lift heeft voelbaar schrift in het {language()}"
                     }
                 }
             }
@@ -7551,8 +7551,8 @@
                 "render": {
                     "special": {
                         "question": "In welke talen is er voelbaar schrift (braille) voor navigatie? <img src='./assets/layers/stairs/Braille_stairs.jpg' style='height: 300px; width: auto; display: block;' />",
-                        "render_list_item": "Deze trap heeft voelbaar schrijft in {language():font-bold}",
-                        "render_single_language": "Deze trap heeft voelbaar schrijft in {language():font-bold}"
+                        "render_list_item": "Deze trap heeft voelbaar schrijft in {language()}",
+                        "render_single_language": "Deze trap heeft voelbaar schrijft in {language()}"
                     }
                 }
             }
@@ -7983,20 +7983,20 @@
             "toilet-changing_table:location": {
                 "mappings": {
                     "0": {
-                        "then": "De luiertafel bevindt zich in de vrouwentoiletten "
+                        "then": "Er bevindt zich een luiertafel in de vrouwentoiletten "
                     },
                     "1": {
-                        "then": "De luiertafel bevindt zich in de herentoiletten "
+                        "then": "Er bevindt zich een luiertafel in de herentoiletten "
                     },
                     "2": {
-                        "then": "De luiertafel bevindt zich in de rolstoeltoegankelijke toilet "
+                        "then": "Er bevindt zich een luiertafel in de rolstoeltoegankelijke toilet "
                     },
                     "3": {
-                        "then": "De luiertafel bevindt zich in een daartoe voorziene kamer "
+                        "then": "Er bevindt zich een luiertafel in een daartoe voorziene kamer "
                     }
                 },
                 "question": "Waar bevindt de luiertafel zich?",
-                "render": "De luiertafel bevindt zich in {changing_table:location}"
+                "render": "Er bevindt zich een luiertafel in {changing_table:location}"
             },
             "toilet-charge": {
                 "freeform": {
