@@ -5399,20 +5399,6 @@
       {
         "if": {
           "and": [
-            "parking_space=disabled",
-            "amenity=parking_space"
-          ]
-        },
-        "then": {
-          "en": "Disabled Parking Space",
-          "nl": "Parkeerplek voor gehandicapten",
-          "de": "Behindertenparkplatz",
-          "cs": "Parkovací místo pro osoby se zdravotním postižením"
-        }
-      },
-      {
-        "if": {
-          "and": [
             "man_made=surveillance",
             {
               "or": [
@@ -7236,16 +7222,6 @@
         }
       },
       {
-        "if": "amenity=shelter",
-        "then": {
-          "en": "Shelter",
-          "de": "Unterstand",
-          "nl": "Schuilplaats",
-          "ca": "Refugi",
-          "cs": "Přístřešek"
-        }
-      },
-      {
         "if": "information=guidepost",
         "then": {
           "en": "Guideposts",
@@ -8374,28 +8350,6 @@
         }
       },
       {
-        "if": {
-          "and": [
-            "crossing=traffic_signals",
-            {
-              "or": [
-                "highway=traffic_signals",
-                "highway=crossing"
-              ]
-            }
-          ]
-        },
-        "then": {
-          "en": "Crossing with traffic signals",
-          "nl": "Oversteekplaats met verkeerslichten",
-          "de": "Kreuzung mit Ampeln",
-          "fr": "Traversée avec feu de signalisation",
-          "es": "Cruce con semáforos",
-          "ca": "Creuament amb semàfors",
-          "cs": "Přechod se světelnou signalizací"
-        }
-      },
-      {
         "if": "highway=steps",
         "then": {
           "en": "Stairs",
@@ -8579,19 +8533,6 @@
         }
       },
       {
-        "if": "highway=traffic_signals",
-        "then": {
-          "en": "Traffic signal",
-          "nl": "Verkeerslicht",
-          "ru": "Светофор",
-          "de": "Ampel",
-          "fr": "Feu de signalisation",
-          "ca": "Semàfor",
-          "es": "Semáforo",
-          "cs": "Semafor"
-        }
-      },
-      {
         "if": {
           "or": [
             "FIXME~.+",
@@ -8653,16 +8594,6 @@
           "es": "Boca de incendios",
           "pa_PK": "ہائڈرنٹ",
           "cs": "Hydrant"
-        }
-      },
-      {
-        "if": "amenity=parking_space",
-        "then": {
-          "en": "Parking Space",
-          "de": "Stellplatz",
-          "nl": "Parkeerplek",
-          "ca": "Espai d'aparcament",
-          "cs": "Parkovací místo"
         }
       },
       {
@@ -9569,24 +9500,6 @@
           "es": "Tienda",
           "pa_PK": "دکان",
           "cs": "Obchod"
-        }
-      },
-      {
-        "if": {
-          "or": [
-            "highway=traffic_signals",
-            "highway=crossing"
-          ]
-        },
-        "then": {
-          "en": "Crossing",
-          "nl": "Oversteekplaats",
-          "de": "Kreuzung",
-          "fr": "Traversée",
-          "ca": "Encreuament",
-          "es": "Cruce",
-          "pa_PK": "کراسنگ",
-          "cs": "Přechod"
         }
       },
       {
@@ -10873,6 +10786,23 @@
           "amenity=clinic",
           "amenity=pharmacy",
           "amenity=ice_cream",
+          "amenity=bench",
+          "amenity=toilets",
+          "amenity=bar",
+          "amenity=pub",
+          "amenity=cafe",
+          "amenity=biergarten",
+          "amenity=nightclub",
+          "amenity=fast_food",
+          "amenity=restaurant",
+          "amenity=parking",
+          "amenity=toilets",
+          "amenity=pharmacy",
+          "amenity=doctors",
+          "amenity=hospital",
+          "amenity=clinic",
+          "amenity=reception_desk",
+          "amenity=parking",
           "amenity=parking_space",
           "amenity=atm",
           "amenity=bank",
@@ -10891,388 +10821,6 @@
           "amenity=nightclub",
           "amenity=charging_station",
           "amenity=clock",
-          "amenity=dentist",
-          "amenity=doctors",
-          "amenity=fire_station",
-          "amenity=fast_food",
-          "amenity=restaurant",
-          "amenity=hospital",
-          "amenity=clinic",
-          "amenity=ice_cream",
-          "amenity=childcare",
-          "amenity=kindergarten",
-          "amenity=parcel_locker",
-          "amenity=parking",
-          "amenity=parking_space",
-          "amenity=pharmacy",
-          "amenity=post_box",
-          "amenity=post_office",
-          "amenity=public_bookcase",
-          "association=cycling",
-          "association=bicycle",
-          "association=cycling",
-          "association=bicycle",
-          "barrier=wall",
-          "barrier=wall",
-          "barrier=wall",
-          "barrier=kerb",
-          "barrier=wall",
-          "barrier=bollard",
-          "barrier=cycle_barrier",
-          "barrier=wall",
-          "barrier=wall",
-          "barrier=kerb",
-          "barrier=bollard",
-          "barrier=cycle_barrier",
-          "barrier=kerb",
-          "climbing=route",
-          "climbing=route",
-          "club=climbing",
-          "club=bicycle",
-          "club=cycling",
-          "club=bicycle",
-          "club=cycling",
-          "club=climbing",
-          "construction:amenity=charging_station",
-          "construction:amenity=charging_station",
-          "construction:amenity=charging_station",
-          "cyclestreet=yes",
-          "cyclestreet=yes",
-          "cyclestreet=yes",
-          "cyclestreet=yes",
-          "cycleway=lane",
-          "cycleway=shared_lane",
-          "cycleway=track",
-          "cycleway=lane",
-          "cycleway=shared_lane",
-          "cycleway=track",
-          "cycleway=lane",
-          "cycleway=shared_lane",
-          "cycleway=track",
-          "cycleway=lane",
-          "cycleway=shared_lane",
-          "cycleway=track",
-          "disused:amenity=charging_station",
-          "disused:amenity=charging_station",
-          "disused:amenity=charging_station",
-          "emergency=defibrillator",
-          "emergency=fire_hydrant",
-          "emergency=fire_extinguisher",
-          "emergency=ambulance_station",
-          "emergency=ambulance_station",
-          "emergency=fire_hydrant",
-          "healthcare=physiotherapist",
-          "healthcare=physiotherapist",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          "highway=traffic_signals",
-          "highway=crossing",
-          "highway=bus_stop",
-          "highway=elevator",
-          "highway=steps",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "highway=traffic_signals",
-          "highway=crossing",
-          "highway=elevator",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          "highway=traffic_signals",
-          "highway=crossing",
-          "highway=speed_camera",
-          "highway=speed_display",
-          "highway=traffic_signals",
-          "highway=crossing",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "emergency=defibrillator",
-          "indoor=door",
-          "indoor=room",
-          "indoor=wall",
-          "indoor=level",
-          "information=guidepost",
-          "leisure=dog_park",
-          {
-            "and": [
-              "dog=unleashed",
-              "leisure=park"
-            ]
-          },
-          "emergency=fire_extinguisher",
-          "highway=elevator",
-          "highway=crossing",
-          "indoor=room",
-          "indoor=area",
-          "indoor=wall",
-          "indoor=door",
-          "indoor=level",
-          "indoor=door",
-          "indoor=area",
-          "indoor=door",
-          "information=guidepost",
-          "information=map",
-          "information=board",
-          "information=map",
-          "isced:level:2011=early_childhood",
-          "isced:level:2011=early_childhood",
-          "leisure=picnic_table",
-          "leisure=hackerspace",
-          "leisure=bird_hide",
-          "leisure=nature_reserve",
-          "leisure=bird_hide",
-          "leisure=fitness_centre",
-          "leisure=fitness_station",
-          "leisure=hackerspace",
-          "leisure=nature_reserve",
-          "memorial=ghost_bike",
-          "memorial=ghost_bike",
-          "ngo=bicycle",
-          "ngo=cycling",
-          "ngo=bicycle",
-          "office=government",
-          "planned:amenity=charging_station",
-          "planned:amenity=charging_station",
-          "planned:amenity=charging_station",
-          "post_office=post_partner",
-          "service:bicycle:cleaning=yes",
-          "service:bicycle:cleaning=diy",
-          "service:bicycle:rental=yes",
-          "service:bicycle:rental=yes",
-          "shop=bicycle",
-          "shop=bicycle",
-          "sport=cycling",
-          "theme=bicycle",
-          "theme=cycling",
-          "tourism=artwork",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          {
-            "and": [
-              "sport=climbing",
-              {
-                "or": [
-                  "club~.+",
-                  "office~.+"
-                ]
-              }
-            ]
-          },
-          "information=guidepost",
-          {
-            "and": [
-              "shop=sports",
-              {
-                "or": [
-                  "sport=bicycle",
-                  "sport=cycling",
-                  "sport="
-                ]
-              },
-              "service:bicycle:retail!=no",
-              "service:bicycle:repair!=no"
-            ]
-          },
-          "ngo=cycling",
-          "service:bicycle:cleaning=yes",
-          "service:bicycle:cleaning=diy",
-          "service:bicycle:rental=yes",
-          "sport=cycling",
-          "theme=bicycle",
-          "theme=cycling",
-          {
-            "and": [
-              "amenity=school",
-              {
-                "or": [
-                  "isced:2011:level~.*bachelor.*",
-                  "isced:2011:level~.*master.*"
-                ]
-              }
-            ]
-          },
-          "tourism=hotel",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "tourism=map",
-          {
-            "and": [
-              "boundary=protected_area",
-              "protect_class!=98"
-            ]
-          },
-          "amenity=bench",
-          "amenity=toilets",
-          "amenity=bar",
-          "amenity=pub",
-          "amenity=cafe",
-          "amenity=biergarten",
-          "amenity=nightclub",
-          "amenity=fast_food",
-          "amenity=restaurant",
-          "amenity=parking",
-          "amenity=parking_space",
-          "amenity=toilets",
-          "amenity=pharmacy",
-          "amenity=doctors",
-          "amenity=hospital",
-          "amenity=clinic",
-          "amenity=reception_desk",
-          "amenity=parking",
-          "barrier=kerb",
-          "barrier=wall",
-          "cyclestreet=yes",
-          "cycleway=lane",
-          "cycleway=shared_lane",
-          "cycleway=track",
-          "generator:source=wind",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          "highway=elevator",
-          "indoor=room",
-          "indoor=area",
-          "indoor=wall",
-          "indoor=door",
-          "indoor=level",
-          "indoor=door",
-          "information=map",
-          "information=board",
-          "information=guidepost",
-          "leisure=picnic_table",
-          "office=government",
-          "tourism=map",
-          "tourism=hotel",
-          "tower:type=observation",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "tourism=artwork",
-          {
-            "and": [
-              "shop=sports",
-              {
-                "or": [
-                  "sport=bicycle",
-                  "sport=cycling",
-                  "sport="
-                ]
-              },
-              "service:bicycle:retail!=no",
-              "service:bicycle:repair!=no"
-            ]
-          },
-          {
-            "and": [
-              "sport=climbing",
-              {
-                "or": [
-                  "club~.+",
-                  "office~.+"
-                ]
-              }
-            ]
-          },
-          "tourism=hotel",
-          "tourism=map",
-          {
-            "and": [
-              "boundary=protected_area",
-              "protect_class!=98"
-            ]
-          },
-          "tower:type=observation",
-          {
-            "and": [
-              "vending=parcel_pickup;parcel_mail_in",
-              "amenity=vending_machine"
-            ]
-          },
-          "leisure=picnic_table",
-          "post_office=post_partner",
-          "surface:colour=rainbow",
-          {
-            "and": [
-              "footway=crossing",
-              "highway=footway"
-            ]
-          },
           "amenity=reception_desk",
           "amenity=recycling",
           "amenity=school",
@@ -11291,31 +10839,153 @@
           "amenity=bench",
           "amenity=post_box",
           "amenity=post_office",
+          "amenity=parcel_locker",
+          "amenity=pharmacy",
+          "amenity=ice_cream",
+          "amenity=toilets",
+          "amenity=shower",
+          "amenity=bicycle_parking",
+          "amenity=parking",
+          "amenity=waste_basket",
+          "amenity=recycling",
+          "amenity=waste_disposal",
+          "amenity=waste_basket",
+          "association=cycling",
+          "association=bicycle",
+          "association=cycling",
+          "association=bicycle",
           "barrier=wall",
+          "barrier=wall",
+          "barrier=wall",
+          "barrier=kerb",
+          "barrier=wall",
+          "barrier=bollard",
+          "barrier=cycle_barrier",
+          "barrier=wall",
+          "barrier=wall",
+          "barrier=kerb",
+          "barrier=kerb",
+          "barrier=wall",
+          "barrier=bollard",
+          "barrier=cycle_barrier",
+          "barrier=wall",
+          "barrier=wall",
+          "climbing=route",
+          "climbing=route",
+          "club=climbing",
+          "club=bicycle",
+          "club=cycling",
+          "club=bicycle",
+          "club=cycling",
+          "club=climbing",
+          "construction:amenity=charging_station",
+          "construction:amenity=charging_station",
+          "construction:amenity=charging_station",
+          "cyclestreet=yes",
+          "cyclestreet=yes",
+          "cyclestreet=yes",
+          "cyclestreet=yes",
+          "cyclestreet=yes",
           "cyclestreet=yes",
           "cycleway=lane",
           "cycleway=shared_lane",
           "cycleway=track",
+          "cycleway=lane",
+          "cycleway=shared_lane",
+          "cycleway=track",
+          "cycleway=lane",
+          "cycleway=shared_lane",
+          "cycleway=track",
+          "cycleway=lane",
+          "cycleway=shared_lane",
+          "cycleway=track",
+          "cycleway=lane",
+          "cycleway=shared_lane",
+          "cycleway=track",
+          "cycleway=lane",
+          "cycleway=shared_lane",
+          "cycleway=track",
+          "disused:amenity=charging_station",
+          "disused:amenity=charging_station",
+          "disused:amenity=charging_station",
+          "emergency=defibrillator",
+          "emergency=fire_hydrant",
+          "emergency=fire_extinguisher",
+          "emergency=ambulance_station",
+          "emergency=ambulance_station",
           "generator:source=wind",
-          "highway=speed_camera",
-          "highway=speed_display",
+          "generator:source=wind",
+          "healthcare=physiotherapist",
+          "highway=cycleway",
+          "highway=residential",
+          "highway=tertiary",
+          "highway=unclassified",
+          "highway=primary",
+          "highway=secondary",
+          "highway=tertiary_link",
+          "highway=primary_link",
+          "highway=secondary_link",
+          "highway=service",
+          "highway=footway",
+          "highway=pedestrian",
+          "highway=living_street",
+          "highway=traffic_signals",
+          "highway=crossing",
+          "highway=bus_stop",
+          "highway=elevator",
           "highway=steps",
-          "highway=street_lamp",
-          "leisure=pitch",
-          "leisure=sports_centre",
+          "highway=cycleway",
+          "highway=residential",
+          "highway=tertiary",
+          "highway=unclassified",
+          "highway=primary",
+          "highway=secondary",
+          "highway=tertiary_link",
+          "highway=primary_link",
+          "highway=secondary_link",
+          "highway=service",
+          "highway=footway",
+          "highway=pedestrian",
+          "highway=living_street",
           {
             "and": [
-              "amenity=school",
-              {
-                "or": [
-                  "isced:2011:level~.*bachelor.*",
-                  "isced:2011:level~.*master.*"
-                ]
-              }
+              "bicycle=designated",
+              "highway=path"
             ]
           },
-          "amenity=parcel_locker",
-          "highway=bus_stop",
+          "highway=traffic_signals",
+          "highway=crossing",
+          "highway=elevator",
+          "highway=cycleway",
+          "highway=residential",
+          "highway=tertiary",
+          "highway=unclassified",
+          "highway=primary",
+          "highway=secondary",
+          "highway=tertiary_link",
+          "highway=primary_link",
+          "highway=secondary_link",
+          "highway=service",
+          "highway=footway",
+          "highway=pedestrian",
+          "highway=living_street",
+          "highway=speed_camera",
+          "highway=speed_display",
+          "highway=cycleway",
+          "highway=residential",
+          "highway=tertiary",
+          "highway=unclassified",
+          "highway=primary",
+          "highway=secondary",
+          "highway=tertiary_link",
+          "highway=primary_link",
+          "highway=secondary_link",
+          "highway=service",
+          "highway=footway",
+          "highway=pedestrian",
+          "highway=living_street",
+          "highway=elevator",
+          "highway=traffic_signals",
           "highway=crossing",
           "highway=cycleway",
           "highway=residential",
@@ -11330,10 +11000,258 @@
           "highway=footway",
           "highway=pedestrian",
           "highway=living_street",
+          "highway=speed_camera",
+          "highway=speed_display",
+          "highway=steps",
+          "highway=street_lamp",
+          "highway=bus_stop",
+          "highway=cycleway",
+          "highway=residential",
+          "highway=tertiary",
+          "indoor=room",
+          "indoor=area",
+          "indoor=wall",
+          "indoor=door",
+          "indoor=level",
+          "indoor=door",
+          "indoor=room",
+          "indoor=area",
+          "indoor=wall",
+          "indoor=door",
+          "indoor=level",
+          "indoor=door",
+          "information=guidepost",
+          "information=map",
+          "information=board",
+          "information=guidepost",
+          "isced:level:2011=early_childhood",
+          "leisure=picnic_table",
+          "leisure=hackerspace",
+          "leisure=bird_hide",
+          "leisure=nature_reserve",
+          "leisure=picnic_table",
+          "memorial=ghost_bike",
+          "ngo=bicycle",
+          "office=government",
+          "planned:amenity=charging_station",
+          "planned:amenity=charging_station",
+          "post_office=post_partner",
+          "service:bicycle:rental=yes",
+          "shop=bicycle",
+          "tourism=artwork",
+          {
+            "and": [
+              "bicycle=designated",
+              "highway=path"
+            ]
+          },
+          {
+            "and": [
+              "sport=climbing",
+              {
+                "or": [
+                  "club~.+",
+                  "office~.+"
+                ]
+              }
+            ]
+          },
+          "information=guidepost",
+          {
+            "and": [
+              "shop=sports",
+              {
+                "or": [
+                  "sport=bicycle",
+                  "sport=cycling",
+                  "sport="
+                ]
+              },
+              "service:bicycle:retail!=no",
+              "service:bicycle:repair!=no"
+            ]
+          },
+          "leisure=bird_hide",
+          "leisure=pitch",
+          "leisure=sports_centre",
+          "ngo=cycling",
+          "ngo=cycling",
+          "ngo=bicycle",
+          "planned:amenity=charging_station",
+          "service:bicycle:cleaning=yes",
+          "service:bicycle:cleaning=diy",
+          "service:bicycle:cleaning=yes",
+          "service:bicycle:cleaning=diy",
+          "service:bicycle:rental=yes",
+          "service:bicycle:rental=yes",
+          "shop=bicycle",
+          "sport=cycling",
+          "theme=bicycle",
+          "theme=cycling",
+          {
+            "and": [
+              "amenity=school",
+              {
+                "or": [
+                  "isced:2011:level~.*bachelor.*",
+                  "isced:2011:level~.*master.*"
+                ]
+              }
+            ]
+          },
+          "tourism=hotel",
+          {
+            "and": [
+              "bicycle=designated",
+              "highway=path"
+            ]
+          },
+          "tourism=map",
+          {
+            "and": [
+              "boundary=protected_area",
+              "protect_class!=98"
+            ]
+          },
+          "information=map",
+          "tourism=map",
+          "tower:type=observation",
+          {
+            "and": [
+              "bicycle=designated",
+              "highway=path"
+            ]
+          },
+          "tourism=hotel",
+          "tourism=artwork",
+          {
+            "and": [
+              "shop=sports",
+              {
+                "or": [
+                  "sport=bicycle",
+                  "sport=cycling",
+                  "sport="
+                ]
+              },
+              "service:bicycle:retail!=no",
+              "service:bicycle:repair!=no"
+            ]
+          },
+          "sport=cycling",
+          "theme=bicycle",
+          "theme=cycling",
+          {
+            "and": [
+              "sport=climbing",
+              {
+                "or": [
+                  "club~.+",
+                  "office~.+"
+                ]
+              }
+            ]
+          },
+          {
+            "and": [
+              "bicycle=designated",
+              "highway=path"
+            ]
+          },
+          "amenity=dentist",
+          "amenity=doctors",
+          "amenity=fire_station",
+          "amenity=fast_food",
+          "amenity=restaurant",
+          "amenity=hospital",
+          "amenity=clinic",
+          "amenity=ice_cream",
+          "amenity=childcare",
+          "amenity=kindergarten",
+          "amenity=parcel_locker",
+          "amenity=parking",
+          "amenity=parking_space",
+          "amenity=pharmacy",
+          "amenity=post_box",
+          "amenity=post_office",
+          "amenity=public_bookcase",
+          "barrier=kerb",
+          "emergency=defibrillator",
+          "emergency=fire_extinguisher",
+          "emergency=fire_hydrant",
+          "healthcare=physiotherapist",
+          "highway=elevator",
+          "highway=crossing",
+          "indoor=door",
+          "indoor=room",
+          "indoor=area",
+          "indoor=wall",
+          "indoor=door",
+          "information=guidepost",
+          "leisure=dog_park",
+          {
+            "and": [
+              "dog=unleashed",
+              "leisure=park"
+            ]
+          },
+          "indoor=level",
+          "information=board",
+          "information=map",
+          "isced:level:2011=early_childhood",
+          "leisure=fitness_centre",
+          "leisure=fitness_station",
+          "leisure=hackerspace",
+          "leisure=nature_reserve",
+          "leisure=picnic_table",
+          "memorial=ghost_bike",
+          "office=government",
+          "tourism=hotel",
+          "tourism=map",
+          {
+            "and": [
+              "boundary=protected_area",
+              "protect_class!=98"
+            ]
+          },
+          "tower:type=observation",
+          {
+            "and": [
+              "vending=parcel_pickup;parcel_mail_in",
+              "amenity=vending_machine"
+            ]
+          },
+          "post_office=post_partner",
+          "surface:colour=rainbow",
+          {
+            "and": [
+              "footway=crossing",
+              "highway=footway"
+            ]
+          },
+          {
+            "and": [
+              "amenity=school",
+              {
+                "or": [
+                  "isced:2011:level~.*bachelor.*",
+                  "isced:2011:level~.*master.*"
+                ]
+              }
+            ]
+          },
+          "highway=unclassified",
+          "highway=primary",
+          "highway=secondary",
+          "highway=tertiary_link",
+          "highway=primary_link",
+          "highway=secondary_link",
+          "highway=service",
+          "highway=footway",
+          "highway=living_street",
           "leisure=dog_park",
           "leisure=picnic_table",
           "natural=tree",
-          "surface:colour=rainbow",
           "toilets=yes",
           {
             "and": [
@@ -11348,6 +11266,9 @@
               "amenity=vending_machine"
             ]
           },
+          "highway=crossing",
+          "highway=pedestrian",
+          "surface:colour=rainbow",
           {
             "and": [
               "footway=crossing",
@@ -11360,18 +11281,6 @@
               "highway=path"
             ]
           },
-          "amenity=pharmacy",
-          "amenity=ice_cream",
-          "amenity=toilets",
-          "amenity=shower",
-          "amenity=bicycle_parking",
-          "amenity=parking",
-          "amenity=shelter",
-          "amenity=waste_basket",
-          "amenity=recycling",
-          "amenity=waste_disposal",
-          "amenity=waste_basket",
-          "barrier=wall",
           "highway=street_lamp",
           "highway=bus_stop",
           "leisure=pitch",
@@ -11805,6 +11714,23 @@
           "amenity=clinic",
           "amenity=pharmacy",
           "amenity=ice_cream",
+          "amenity=bench",
+          "amenity=toilets",
+          "amenity=bar",
+          "amenity=pub",
+          "amenity=cafe",
+          "amenity=biergarten",
+          "amenity=nightclub",
+          "amenity=fast_food",
+          "amenity=restaurant",
+          "amenity=parking",
+          "amenity=toilets",
+          "amenity=pharmacy",
+          "amenity=doctors",
+          "amenity=hospital",
+          "amenity=clinic",
+          "amenity=reception_desk",
+          "amenity=parking",
           "amenity=parking_space",
           "amenity=atm",
           "amenity=bank",
@@ -11823,388 +11749,6 @@
           "amenity=nightclub",
           "amenity=charging_station",
           "amenity=clock",
-          "amenity=dentist",
-          "amenity=doctors",
-          "amenity=fire_station",
-          "amenity=fast_food",
-          "amenity=restaurant",
-          "amenity=hospital",
-          "amenity=clinic",
-          "amenity=ice_cream",
-          "amenity=childcare",
-          "amenity=kindergarten",
-          "amenity=parcel_locker",
-          "amenity=parking",
-          "amenity=parking_space",
-          "amenity=pharmacy",
-          "amenity=post_box",
-          "amenity=post_office",
-          "amenity=public_bookcase",
-          "association=cycling",
-          "association=bicycle",
-          "association=cycling",
-          "association=bicycle",
-          "barrier=wall",
-          "barrier=wall",
-          "barrier=wall",
-          "barrier=kerb",
-          "barrier=wall",
-          "barrier=bollard",
-          "barrier=cycle_barrier",
-          "barrier=wall",
-          "barrier=wall",
-          "barrier=kerb",
-          "barrier=bollard",
-          "barrier=cycle_barrier",
-          "barrier=kerb",
-          "climbing=route",
-          "climbing=route",
-          "club=climbing",
-          "club=bicycle",
-          "club=cycling",
-          "club=bicycle",
-          "club=cycling",
-          "club=climbing",
-          "construction:amenity=charging_station",
-          "construction:amenity=charging_station",
-          "construction:amenity=charging_station",
-          "cyclestreet=yes",
-          "cyclestreet=yes",
-          "cyclestreet=yes",
-          "cyclestreet=yes",
-          "cycleway=lane",
-          "cycleway=shared_lane",
-          "cycleway=track",
-          "cycleway=lane",
-          "cycleway=shared_lane",
-          "cycleway=track",
-          "cycleway=lane",
-          "cycleway=shared_lane",
-          "cycleway=track",
-          "cycleway=lane",
-          "cycleway=shared_lane",
-          "cycleway=track",
-          "disused:amenity=charging_station",
-          "disused:amenity=charging_station",
-          "disused:amenity=charging_station",
-          "emergency=defibrillator",
-          "emergency=fire_hydrant",
-          "emergency=fire_extinguisher",
-          "emergency=ambulance_station",
-          "emergency=ambulance_station",
-          "emergency=fire_hydrant",
-          "healthcare=physiotherapist",
-          "healthcare=physiotherapist",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          "highway=traffic_signals",
-          "highway=crossing",
-          "highway=bus_stop",
-          "highway=elevator",
-          "highway=steps",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "highway=traffic_signals",
-          "highway=crossing",
-          "highway=elevator",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          "highway=traffic_signals",
-          "highway=crossing",
-          "highway=speed_camera",
-          "highway=speed_display",
-          "highway=traffic_signals",
-          "highway=crossing",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "emergency=defibrillator",
-          "indoor=door",
-          "indoor=room",
-          "indoor=wall",
-          "indoor=level",
-          "information=guidepost",
-          "leisure=dog_park",
-          {
-            "and": [
-              "dog=unleashed",
-              "leisure=park"
-            ]
-          },
-          "emergency=fire_extinguisher",
-          "highway=elevator",
-          "highway=crossing",
-          "indoor=room",
-          "indoor=area",
-          "indoor=wall",
-          "indoor=door",
-          "indoor=level",
-          "indoor=door",
-          "indoor=area",
-          "indoor=door",
-          "information=guidepost",
-          "information=map",
-          "information=board",
-          "information=map",
-          "isced:level:2011=early_childhood",
-          "isced:level:2011=early_childhood",
-          "leisure=picnic_table",
-          "leisure=hackerspace",
-          "leisure=bird_hide",
-          "leisure=nature_reserve",
-          "leisure=bird_hide",
-          "leisure=fitness_centre",
-          "leisure=fitness_station",
-          "leisure=hackerspace",
-          "leisure=nature_reserve",
-          "memorial=ghost_bike",
-          "memorial=ghost_bike",
-          "ngo=bicycle",
-          "ngo=cycling",
-          "ngo=bicycle",
-          "office=government",
-          "planned:amenity=charging_station",
-          "planned:amenity=charging_station",
-          "planned:amenity=charging_station",
-          "post_office=post_partner",
-          "service:bicycle:cleaning=yes",
-          "service:bicycle:cleaning=diy",
-          "service:bicycle:rental=yes",
-          "service:bicycle:rental=yes",
-          "shop=bicycle",
-          "shop=bicycle",
-          "sport=cycling",
-          "theme=bicycle",
-          "theme=cycling",
-          "tourism=artwork",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          {
-            "and": [
-              "sport=climbing",
-              {
-                "or": [
-                  "club~.+",
-                  "office~.+"
-                ]
-              }
-            ]
-          },
-          "information=guidepost",
-          {
-            "and": [
-              "shop=sports",
-              {
-                "or": [
-                  "sport=bicycle",
-                  "sport=cycling",
-                  "sport="
-                ]
-              },
-              "service:bicycle:retail!=no",
-              "service:bicycle:repair!=no"
-            ]
-          },
-          "ngo=cycling",
-          "service:bicycle:cleaning=yes",
-          "service:bicycle:cleaning=diy",
-          "service:bicycle:rental=yes",
-          "sport=cycling",
-          "theme=bicycle",
-          "theme=cycling",
-          {
-            "and": [
-              "amenity=school",
-              {
-                "or": [
-                  "isced:2011:level~.*bachelor.*",
-                  "isced:2011:level~.*master.*"
-                ]
-              }
-            ]
-          },
-          "tourism=hotel",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "tourism=map",
-          {
-            "and": [
-              "boundary=protected_area",
-              "protect_class!=98"
-            ]
-          },
-          "amenity=bench",
-          "amenity=toilets",
-          "amenity=bar",
-          "amenity=pub",
-          "amenity=cafe",
-          "amenity=biergarten",
-          "amenity=nightclub",
-          "amenity=fast_food",
-          "amenity=restaurant",
-          "amenity=parking",
-          "amenity=parking_space",
-          "amenity=toilets",
-          "amenity=pharmacy",
-          "amenity=doctors",
-          "amenity=hospital",
-          "amenity=clinic",
-          "amenity=reception_desk",
-          "amenity=parking",
-          "barrier=kerb",
-          "barrier=wall",
-          "cyclestreet=yes",
-          "cycleway=lane",
-          "cycleway=shared_lane",
-          "cycleway=track",
-          "generator:source=wind",
-          "highway=cycleway",
-          "highway=residential",
-          "highway=tertiary",
-          "highway=unclassified",
-          "highway=primary",
-          "highway=secondary",
-          "highway=tertiary_link",
-          "highway=primary_link",
-          "highway=secondary_link",
-          "highway=service",
-          "highway=footway",
-          "highway=pedestrian",
-          "highway=living_street",
-          "highway=elevator",
-          "indoor=room",
-          "indoor=area",
-          "indoor=wall",
-          "indoor=door",
-          "indoor=level",
-          "indoor=door",
-          "information=map",
-          "information=board",
-          "information=guidepost",
-          "leisure=picnic_table",
-          "office=government",
-          "tourism=map",
-          "tourism=hotel",
-          "tower:type=observation",
-          {
-            "and": [
-              "bicycle=designated",
-              "highway=path"
-            ]
-          },
-          "tourism=artwork",
-          {
-            "and": [
-              "shop=sports",
-              {
-                "or": [
-                  "sport=bicycle",
-                  "sport=cycling",
-                  "sport="
-                ]
-              },
-              "service:bicycle:retail!=no",
-              "service:bicycle:repair!=no"
-            ]
-          },
-          {
-            "and": [
-              "sport=climbing",
-              {
-                "or": [
-                  "club~.+",
-                  "office~.+"
-                ]
-              }
-            ]
-          },
-          "tourism=hotel",
-          "tourism=map",
-          {
-            "and": [
-              "boundary=protected_area",
-              "protect_class!=98"
-            ]
-          },
-          "tower:type=observation",
-          {
-            "and": [
-              "vending=parcel_pickup;parcel_mail_in",
-              "amenity=vending_machine"
-            ]
-          },
-          "leisure=picnic_table",
-          "post_office=post_partner",
-          "surface:colour=rainbow",
-          {
-            "and": [
-              "footway=crossing",
-              "highway=footway"
-            ]
-          },
           "amenity=reception_desk",
           "amenity=recycling",
           "amenity=school",
@@ -12223,31 +11767,153 @@
           "amenity=bench",
           "amenity=post_box",
           "amenity=post_office",
+          "amenity=parcel_locker",
+          "amenity=pharmacy",
+          "amenity=ice_cream",
+          "amenity=toilets",
+          "amenity=shower",
+          "amenity=bicycle_parking",
+          "amenity=parking",
+          "amenity=waste_basket",
+          "amenity=recycling",
+          "amenity=waste_disposal",
+          "amenity=waste_basket",
+          "association=cycling",
+          "association=bicycle",
+          "association=cycling",
+          "association=bicycle",
           "barrier=wall",
+          "barrier=wall",
+          "barrier=wall",
+          "barrier=kerb",
+          "barrier=wall",
+          "barrier=bollard",
+          "barrier=cycle_barrier",
+          "barrier=wall",
+          "barrier=wall",
+          "barrier=kerb",
+          "barrier=kerb",
+          "barrier=wall",
+          "barrier=bollard",
+          "barrier=cycle_barrier",
+          "barrier=wall",
+          "barrier=wall",
+          "climbing=route",
+          "climbing=route",
+          "club=climbing",
+          "club=bicycle",
+          "club=cycling",
+          "club=bicycle",
+          "club=cycling",
+          "club=climbing",
+          "construction:amenity=charging_station",
+          "construction:amenity=charging_station",
+          "construction:amenity=charging_station",
+          "cyclestreet=yes",
+          "cyclestreet=yes",
+          "cyclestreet=yes",
+          "cyclestreet=yes",
+          "cyclestreet=yes",
           "cyclestreet=yes",
           "cycleway=lane",
           "cycleway=shared_lane",
           "cycleway=track",
+          "cycleway=lane",
+          "cycleway=shared_lane",
+          "cycleway=track",
+          "cycleway=lane",
+          "cycleway=shared_lane",
+          "cycleway=track",
+          "cycleway=lane",
+          "cycleway=shared_lane",
+          "cycleway=track",
+          "cycleway=lane",
+          "cycleway=shared_lane",
+          "cycleway=track",
+          "cycleway=lane",
+          "cycleway=shared_lane",
+          "cycleway=track",
+          "disused:amenity=charging_station",
+          "disused:amenity=charging_station",
+          "disused:amenity=charging_station",
+          "emergency=defibrillator",
+          "emergency=fire_hydrant",
+          "emergency=fire_extinguisher",
+          "emergency=ambulance_station",
+          "emergency=ambulance_station",
           "generator:source=wind",
-          "highway=speed_camera",
-          "highway=speed_display",
+          "generator:source=wind",
+          "healthcare=physiotherapist",
+          "highway=cycleway",
+          "highway=residential",
+          "highway=tertiary",
+          "highway=unclassified",
+          "highway=primary",
+          "highway=secondary",
+          "highway=tertiary_link",
+          "highway=primary_link",
+          "highway=secondary_link",
+          "highway=service",
+          "highway=footway",
+          "highway=pedestrian",
+          "highway=living_street",
+          "highway=traffic_signals",
+          "highway=crossing",
+          "highway=bus_stop",
+          "highway=elevator",
           "highway=steps",
-          "highway=street_lamp",
-          "leisure=pitch",
-          "leisure=sports_centre",
+          "highway=cycleway",
+          "highway=residential",
+          "highway=tertiary",
+          "highway=unclassified",
+          "highway=primary",
+          "highway=secondary",
+          "highway=tertiary_link",
+          "highway=primary_link",
+          "highway=secondary_link",
+          "highway=service",
+          "highway=footway",
+          "highway=pedestrian",
+          "highway=living_street",
           {
             "and": [
-              "amenity=school",
-              {
-                "or": [
-                  "isced:2011:level~.*bachelor.*",
-                  "isced:2011:level~.*master.*"
-                ]
-              }
+              "bicycle=designated",
+              "highway=path"
             ]
           },
-          "amenity=parcel_locker",
-          "highway=bus_stop",
+          "highway=traffic_signals",
+          "highway=crossing",
+          "highway=elevator",
+          "highway=cycleway",
+          "highway=residential",
+          "highway=tertiary",
+          "highway=unclassified",
+          "highway=primary",
+          "highway=secondary",
+          "highway=tertiary_link",
+          "highway=primary_link",
+          "highway=secondary_link",
+          "highway=service",
+          "highway=footway",
+          "highway=pedestrian",
+          "highway=living_street",
+          "highway=speed_camera",
+          "highway=speed_display",
+          "highway=cycleway",
+          "highway=residential",
+          "highway=tertiary",
+          "highway=unclassified",
+          "highway=primary",
+          "highway=secondary",
+          "highway=tertiary_link",
+          "highway=primary_link",
+          "highway=secondary_link",
+          "highway=service",
+          "highway=footway",
+          "highway=pedestrian",
+          "highway=living_street",
+          "highway=elevator",
+          "highway=traffic_signals",
           "highway=crossing",
           "highway=cycleway",
           "highway=residential",
@@ -12262,10 +11928,258 @@
           "highway=footway",
           "highway=pedestrian",
           "highway=living_street",
+          "highway=speed_camera",
+          "highway=speed_display",
+          "highway=steps",
+          "highway=street_lamp",
+          "highway=bus_stop",
+          "highway=cycleway",
+          "highway=residential",
+          "highway=tertiary",
+          "indoor=room",
+          "indoor=area",
+          "indoor=wall",
+          "indoor=door",
+          "indoor=level",
+          "indoor=door",
+          "indoor=room",
+          "indoor=area",
+          "indoor=wall",
+          "indoor=door",
+          "indoor=level",
+          "indoor=door",
+          "information=guidepost",
+          "information=map",
+          "information=board",
+          "information=guidepost",
+          "isced:level:2011=early_childhood",
+          "leisure=picnic_table",
+          "leisure=hackerspace",
+          "leisure=bird_hide",
+          "leisure=nature_reserve",
+          "leisure=picnic_table",
+          "memorial=ghost_bike",
+          "ngo=bicycle",
+          "office=government",
+          "planned:amenity=charging_station",
+          "planned:amenity=charging_station",
+          "post_office=post_partner",
+          "service:bicycle:rental=yes",
+          "shop=bicycle",
+          "tourism=artwork",
+          {
+            "and": [
+              "bicycle=designated",
+              "highway=path"
+            ]
+          },
+          {
+            "and": [
+              "sport=climbing",
+              {
+                "or": [
+                  "club~.+",
+                  "office~.+"
+                ]
+              }
+            ]
+          },
+          "information=guidepost",
+          {
+            "and": [
+              "shop=sports",
+              {
+                "or": [
+                  "sport=bicycle",
+                  "sport=cycling",
+                  "sport="
+                ]
+              },
+              "service:bicycle:retail!=no",
+              "service:bicycle:repair!=no"
+            ]
+          },
+          "leisure=bird_hide",
+          "leisure=pitch",
+          "leisure=sports_centre",
+          "ngo=cycling",
+          "ngo=cycling",
+          "ngo=bicycle",
+          "planned:amenity=charging_station",
+          "service:bicycle:cleaning=yes",
+          "service:bicycle:cleaning=diy",
+          "service:bicycle:cleaning=yes",
+          "service:bicycle:cleaning=diy",
+          "service:bicycle:rental=yes",
+          "service:bicycle:rental=yes",
+          "shop=bicycle",
+          "sport=cycling",
+          "theme=bicycle",
+          "theme=cycling",
+          {
+            "and": [
+              "amenity=school",
+              {
+                "or": [
+                  "isced:2011:level~.*bachelor.*",
+                  "isced:2011:level~.*master.*"
+                ]
+              }
+            ]
+          },
+          "tourism=hotel",
+          {
+            "and": [
+              "bicycle=designated",
+              "highway=path"
+            ]
+          },
+          "tourism=map",
+          {
+            "and": [
+              "boundary=protected_area",
+              "protect_class!=98"
+            ]
+          },
+          "information=map",
+          "tourism=map",
+          "tower:type=observation",
+          {
+            "and": [
+              "bicycle=designated",
+              "highway=path"
+            ]
+          },
+          "tourism=hotel",
+          "tourism=artwork",
+          {
+            "and": [
+              "shop=sports",
+              {
+                "or": [
+                  "sport=bicycle",
+                  "sport=cycling",
+                  "sport="
+                ]
+              },
+              "service:bicycle:retail!=no",
+              "service:bicycle:repair!=no"
+            ]
+          },
+          "sport=cycling",
+          "theme=bicycle",
+          "theme=cycling",
+          {
+            "and": [
+              "sport=climbing",
+              {
+                "or": [
+                  "club~.+",
+                  "office~.+"
+                ]
+              }
+            ]
+          },
+          {
+            "and": [
+              "bicycle=designated",
+              "highway=path"
+            ]
+          },
+          "amenity=dentist",
+          "amenity=doctors",
+          "amenity=fire_station",
+          "amenity=fast_food",
+          "amenity=restaurant",
+          "amenity=hospital",
+          "amenity=clinic",
+          "amenity=ice_cream",
+          "amenity=childcare",
+          "amenity=kindergarten",
+          "amenity=parcel_locker",
+          "amenity=parking",
+          "amenity=parking_space",
+          "amenity=pharmacy",
+          "amenity=post_box",
+          "amenity=post_office",
+          "amenity=public_bookcase",
+          "barrier=kerb",
+          "emergency=defibrillator",
+          "emergency=fire_extinguisher",
+          "emergency=fire_hydrant",
+          "healthcare=physiotherapist",
+          "highway=elevator",
+          "highway=crossing",
+          "indoor=door",
+          "indoor=room",
+          "indoor=area",
+          "indoor=wall",
+          "indoor=door",
+          "information=guidepost",
+          "leisure=dog_park",
+          {
+            "and": [
+              "dog=unleashed",
+              "leisure=park"
+            ]
+          },
+          "indoor=level",
+          "information=board",
+          "information=map",
+          "isced:level:2011=early_childhood",
+          "leisure=fitness_centre",
+          "leisure=fitness_station",
+          "leisure=hackerspace",
+          "leisure=nature_reserve",
+          "leisure=picnic_table",
+          "memorial=ghost_bike",
+          "office=government",
+          "tourism=hotel",
+          "tourism=map",
+          {
+            "and": [
+              "boundary=protected_area",
+              "protect_class!=98"
+            ]
+          },
+          "tower:type=observation",
+          {
+            "and": [
+              "vending=parcel_pickup;parcel_mail_in",
+              "amenity=vending_machine"
+            ]
+          },
+          "post_office=post_partner",
+          "surface:colour=rainbow",
+          {
+            "and": [
+              "footway=crossing",
+              "highway=footway"
+            ]
+          },
+          {
+            "and": [
+              "amenity=school",
+              {
+                "or": [
+                  "isced:2011:level~.*bachelor.*",
+                  "isced:2011:level~.*master.*"
+                ]
+              }
+            ]
+          },
+          "highway=unclassified",
+          "highway=primary",
+          "highway=secondary",
+          "highway=tertiary_link",
+          "highway=primary_link",
+          "highway=secondary_link",
+          "highway=service",
+          "highway=footway",
+          "highway=living_street",
           "leisure=dog_park",
           "leisure=picnic_table",
           "natural=tree",
-          "surface:colour=rainbow",
           "toilets=yes",
           {
             "and": [
@@ -12280,6 +12194,9 @@
               "amenity=vending_machine"
             ]
           },
+          "highway=crossing",
+          "highway=pedestrian",
+          "surface:colour=rainbow",
           {
             "and": [
               "footway=crossing",
@@ -12292,18 +12209,6 @@
               "highway=path"
             ]
           },
-          "amenity=pharmacy",
-          "amenity=ice_cream",
-          "amenity=toilets",
-          "amenity=shower",
-          "amenity=bicycle_parking",
-          "amenity=parking",
-          "amenity=shelter",
-          "amenity=waste_basket",
-          "amenity=recycling",
-          "amenity=waste_disposal",
-          "amenity=waste_basket",
-          "barrier=wall",
           "highway=street_lamp",
           "highway=bus_stop",
           "leisure=pitch",
@@ -25172,7 +25077,6 @@
         "or": [
           "highway=crossing",
           "highway=crossing",
-          "highway=crossing",
           "highway=crossing"
         ]
       },
@@ -25294,7 +25198,6 @@
         "or": [
           "highway=crossing",
           "highway=crossing",
-          "highway=crossing",
           "highway=crossing"
         ]
       },
@@ -25342,7 +25245,6 @@
         "or": [
           "highway=crossing",
           "highway=crossing",
-          "highway=crossing",
           "highway=crossing"
         ]
       },
@@ -25386,7 +25288,6 @@
       },
       "condition": {
         "or": [
-          "highway=crossing",
           "highway=crossing",
           "highway=crossing",
           "highway=crossing"
@@ -25445,13 +25346,6 @@
       },
       "condition": {
         "or": [
-          "highway=traffic_signals",
-          {
-            "and": [
-              "crossing=traffic_signals",
-              "highway=crossing"
-            ]
-          },
           "highway=traffic_signals",
           {
             "and": [
@@ -25722,7 +25616,6 @@
         "or": [
           "highway=traffic_signals",
           "highway=traffic_signals",
-          "highway=traffic_signals",
           "highway=traffic_signals"
         ]
       },
@@ -25784,7 +25677,6 @@
       },
       "condition": {
         "or": [
-          "highway=traffic_signals",
           "highway=traffic_signals",
           "highway=traffic_signals",
           "highway=traffic_signals"
@@ -75835,216 +75727,6 @@
       }
     },
     {
-      "id": "parking_spaces_type",
-      "question": {
-        "en": "What kind of parking space is this?",
-        "de": "Welche Art von Stellplatz ist dies?",
-        "nl": "Wat voor parkeerplek is dit?",
-        "ca": "Quin tipus d'espai d'aparcament és aquest?",
-        "cs": "Co je to za parkovací místo?"
-      },
-      "mappings": [
-        {
-          "if": "parking_space=",
-          "then": {
-            "en": "This is a normal parking space.",
-            "de": "Dies ist ein normaler Stellplatz.",
-            "nl": "Dit is een normale parkeerplek.",
-            "ca": "És un lloc normal d'aparcament.",
-            "pl": "To jest zwykłe miejsce parkingowe.",
-            "cs": "To je normální parkovací místo."
-          },
-          "hideInAnswer": true
-        },
-        {
-          "if": "parking_space=normal",
-          "then": {
-            "en": "This is a normal parking space.",
-            "de": "Dies ist ein normaler Stellplatz.",
-            "nl": "Dit is een normale parkeerplek.",
-            "pl": "To jest zwykłe miejsce parkingowe.",
-            "ca": "Aquesta és una plaça d'aparcament normal.",
-            "cs": "To je normální parkovací místo."
-          }
-        },
-        {
-          "if": "parking_space=disabled",
-          "then": {
-            "en": "This is a disabled parking space.",
-            "de": "Dies ist ein Behindertenstellplatz.",
-            "nl": "Dit is een gehandicaptenparkeerplaats.",
-            "pl": "To jest miejsce parkingowe dla niepełnosprawnych.",
-            "ca": "Aquesta és una plaça d'aparcament per a minusvàlids.",
-            "cs": "Jedná se o parkovací místo pro osoby se zdravotním postižením."
-          }
-        },
-        {
-          "if": "parking_space=private",
-          "then": {
-            "en": "This is a private parking space.",
-            "de": "Dies ist ein privater Stellplatz.",
-            "nl": "Dit is een privéparkeerplek.",
-            "pl": "To jest prywatne miejsce parkingowe.",
-            "ca": "Es tracta d'una plaça d'aparcament privada.",
-            "cs": "Jedná se o soukromé parkovací místo."
-          }
-        },
-        {
-          "if": "parking_space=charging",
-          "then": {
-            "en": "This is parking space reserved for charging vehicles.",
-            "de": "Dies ist ein Stellplatz, der für das Laden von Fahrzeugen reserviert ist.",
-            "nl": "Deze parkeerplek is gereserveerd voor het opladen van voertuigen.",
-            "pl": "To miejsce parkingowe jest zarezerwowane dla ładowania pojazdów.",
-            "ca": "Es tracta d'una plaça d'aparcament reservada per a la recàrrega de vehicles.",
-            "cs": "Jedná se o parkovací místo vyhrazené pro nabíjení vozidel."
-          }
-        },
-        {
-          "if": "parking_space=delivery",
-          "then": {
-            "en": "This is parking space reserved for deliveries.",
-            "de": "Dies ist ein Stellplatz, der für Lieferfahrzeuge reserviert ist.",
-            "nl": "Deze parkeerplek is gereserveerd voor leveringen.",
-            "pl": "To miejsce parkingowe jest przeznaczone dla dostaw.",
-            "ca": "Es tracta d'una plaça d'aparcament reservada per a repartidors.",
-            "cs": "Jedná se o parkovací místo vyhrazené pro dodávky."
-          }
-        },
-        {
-          "if": "parking_space=hgv",
-          "then": {
-            "en": "This is parking space reserved for heavy goods vehicles.",
-            "de": "Dies ist ein Stellplatz, der für Lastkraftwagen reserviert ist.",
-            "nl": "Deze parkeerplek is gereserveerd voor vrachtwagens.",
-            "cs": "Jedná se o parkovací místo vyhrazené pro těžká nákladní vozidla."
-          }
-        },
-        {
-          "if": "parking_space=caravan",
-          "then": {
-            "en": "This is parking space reserved for caravans or RVs.",
-            "de": "Dieser Stellplatz ist für Wohnwagen oder Wohnmobile reserviert.",
-            "nl": "Deze parkeerplek is gereserveerd voor caravans of campers.",
-            "cs": "Jedná se o parkovací místo vyhrazené pro karavany nebo obytná vozidla."
-          }
-        },
-        {
-          "if": "parking_space=bus",
-          "then": {
-            "en": "This is parking space reserved for buses.",
-            "de": "Dies ist ein Stellplatz, der für Busse reserviert ist.",
-            "nl": "Deze parkeerplek is gereserveerd voor bussen.",
-            "pl": "To miejsce parkingowe jest przeznaczone dla busów.",
-            "ca": "Es tracta d'una plaça d'aparcament reservada per a autobusos.",
-            "cs": "Jedná se o parkovací místo vyhrazené pro autobusy."
-          }
-        },
-        {
-          "if": "parking_space=motorcycle",
-          "then": {
-            "en": "This is parking space reserved for motorcycles.",
-            "de": "Dies ist ein Stellplatz, der für Motorräder reserviert ist.",
-            "nl": "Deze parkeerplek is gereserveerd voor motoren.",
-            "pl": "To miejsce parkingowe jest przeznaczone dla motocykli.",
-            "ca": "Es tracta d'una plaça d'aparcament reservada per a motos.",
-            "cs": "Jedná se o parkovací místo vyhrazené pro motocykly."
-          }
-        },
-        {
-          "if": "parking_space=parent",
-          "then": {
-            "en": "This is a parking space reserved for parents with children.",
-            "de": "Dies ist ein Stellplatz, der für Eltern mit Kindern reserviert ist.",
-            "nl": "Deze parkeerplek is gereserveerd voor ouders met kinderen.",
-            "pl": "To miejsce jest przeznaczone dla rodziców z dziećmi.",
-            "ca": "Es tracta d'una plaça d'aparcament reservada per a pares amb fills.",
-            "cs": "Jedná se o parkovací místo vyhrazené pro rodiče s dětmi."
-          }
-        },
-        {
-          "if": "parking_space=staff",
-          "then": {
-            "en": "This is a parking space reserved for staff.",
-            "de": "Dies ist ein Stellplatz, der für das Personal reserviert ist.",
-            "nl": "Deze parkeerplek is gereserveerd voor personeel.",
-            "pl": "To jest miejsce parkingowe przeznaczone dla pracowników.",
-            "ca": "Es tracta d'una plaça d'aparcament reservada al personal.",
-            "cs": "Jedná se o parkovací místo vyhrazené pro zaměstnance."
-          }
-        },
-        {
-          "if": "parking_space=taxi",
-          "then": {
-            "en": "This is a parking space reserved for taxis.",
-            "de": "Dies ist ein Stellplatz, der für Taxis reserviert ist.",
-            "nl": "Deze parkeerplek is gereserveerd voor taxis.",
-            "pl": "To miejsce parkingowe jest przeznaczone dla taksówek.",
-            "ca": "Aquest espai d'aparcament està reservat per a taxi.",
-            "cs": "Jedná se o parkovací místo vyhrazené pro taxíky."
-          }
-        },
-        {
-          "if": "parking_space=trailer",
-          "then": {
-            "en": "This is a parking space reserved for vehicles towing a trailer.",
-            "de": "Dies ist ein Stellplatz, der für Fahrzeuge mit Anhänger reserviert ist.",
-            "nl": "Deze parkeerplek is gereserveerd voor voertuigen met een aanhanger.",
-            "cs": "Jedná se o parkovací místo vyhrazené pro vozidla táhnoucí přívěs."
-          }
-        },
-        {
-          "if": "parking_space=car_sharing",
-          "then": {
-            "en": "This is a parking space reserved for car sharing.",
-            "de": "Dies ist ein Stellplatz, der für Carsharing reserviert ist.",
-            "nl": "Deze parkeerplek is gereserveerd voor autodelen.",
-            "cs": "Jedná se o parkovací místo vyhrazené pro sdílení automobilů."
-          }
-        }
-      ],
-      "condition": {
-        "and": [
-          {
-            "and": [
-              "amenity=parking_space"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "parking_spaces_capacity",
-      "render": {
-        "en": "This parking spaces has {capacity} spaces.",
-        "de": "Dieser Parkplatz hat {capacity} Stellplätze.",
-        "nl": "Deze parkeerplek heeft {capacity} plaatsen.",
-        "ca": "Aquests espais d'aparcament tenen {capacity} places.",
-        "cs": "Toto parkoviště má {capacity} míst."
-      },
-      "mappings": [
-        {
-          "if": "capacity=1",
-          "then": {
-            "en": "This parking space has 1 space.",
-            "de": "Dieser Parkplatz hat 1 Stellplatz.",
-            "nl": "Deze parkeerplek heeft 1 plaats.",
-            "ca": "Aquest espai d'aparcament té 1 plaça.",
-            "cs": "Toto parkoviště má 1 místo."
-          }
-        }
-      ],
-      "condition": {
-        "and": [
-          {
-            "and": [
-              "amenity=parking_space"
-            ]
-          }
-        ]
-      }
-    },
-    {
       "id": "desk-height",
       "question": {
         "en": "What is the height of the reception desk? ",
@@ -76345,6 +76027,216 @@
         "or": [
           "generator:source=wind",
           "generator:source=wind"
+        ]
+      }
+    },
+    {
+      "id": "parking_spaces_type",
+      "question": {
+        "en": "What kind of parking space is this?",
+        "de": "Welche Art von Stellplatz ist dies?",
+        "nl": "Wat voor parkeerplek is dit?",
+        "ca": "Quin tipus d'espai d'aparcament és aquest?",
+        "cs": "Co je to za parkovací místo?"
+      },
+      "mappings": [
+        {
+          "if": "parking_space=",
+          "then": {
+            "en": "This is a normal parking space.",
+            "de": "Dies ist ein normaler Stellplatz.",
+            "nl": "Dit is een normale parkeerplek.",
+            "ca": "És un lloc normal d'aparcament.",
+            "pl": "To jest zwykłe miejsce parkingowe.",
+            "cs": "To je normální parkovací místo."
+          },
+          "hideInAnswer": true
+        },
+        {
+          "if": "parking_space=normal",
+          "then": {
+            "en": "This is a normal parking space.",
+            "de": "Dies ist ein normaler Stellplatz.",
+            "nl": "Dit is een normale parkeerplek.",
+            "pl": "To jest zwykłe miejsce parkingowe.",
+            "ca": "Aquesta és una plaça d'aparcament normal.",
+            "cs": "To je normální parkovací místo."
+          }
+        },
+        {
+          "if": "parking_space=disabled",
+          "then": {
+            "en": "This is a disabled parking space.",
+            "de": "Dies ist ein Behindertenstellplatz.",
+            "nl": "Dit is een gehandicaptenparkeerplaats.",
+            "pl": "To jest miejsce parkingowe dla niepełnosprawnych.",
+            "ca": "Aquesta és una plaça d'aparcament per a minusvàlids.",
+            "cs": "Jedná se o parkovací místo pro osoby se zdravotním postižením."
+          }
+        },
+        {
+          "if": "parking_space=private",
+          "then": {
+            "en": "This is a private parking space.",
+            "de": "Dies ist ein privater Stellplatz.",
+            "nl": "Dit is een privéparkeerplek.",
+            "pl": "To jest prywatne miejsce parkingowe.",
+            "ca": "Es tracta d'una plaça d'aparcament privada.",
+            "cs": "Jedná se o soukromé parkovací místo."
+          }
+        },
+        {
+          "if": "parking_space=charging",
+          "then": {
+            "en": "This is parking space reserved for charging vehicles.",
+            "de": "Dies ist ein Stellplatz, der für das Laden von Fahrzeugen reserviert ist.",
+            "nl": "Deze parkeerplek is gereserveerd voor het opladen van voertuigen.",
+            "pl": "To miejsce parkingowe jest zarezerwowane dla ładowania pojazdów.",
+            "ca": "Es tracta d'una plaça d'aparcament reservada per a la recàrrega de vehicles.",
+            "cs": "Jedná se o parkovací místo vyhrazené pro nabíjení vozidel."
+          }
+        },
+        {
+          "if": "parking_space=delivery",
+          "then": {
+            "en": "This is parking space reserved for deliveries.",
+            "de": "Dies ist ein Stellplatz, der für Lieferfahrzeuge reserviert ist.",
+            "nl": "Deze parkeerplek is gereserveerd voor leveringen.",
+            "pl": "To miejsce parkingowe jest przeznaczone dla dostaw.",
+            "ca": "Es tracta d'una plaça d'aparcament reservada per a repartidors.",
+            "cs": "Jedná se o parkovací místo vyhrazené pro dodávky."
+          }
+        },
+        {
+          "if": "parking_space=hgv",
+          "then": {
+            "en": "This is parking space reserved for heavy goods vehicles.",
+            "de": "Dies ist ein Stellplatz, der für Lastkraftwagen reserviert ist.",
+            "nl": "Deze parkeerplek is gereserveerd voor vrachtwagens.",
+            "cs": "Jedná se o parkovací místo vyhrazené pro těžká nákladní vozidla."
+          }
+        },
+        {
+          "if": "parking_space=caravan",
+          "then": {
+            "en": "This is parking space reserved for caravans or RVs.",
+            "de": "Dieser Stellplatz ist für Wohnwagen oder Wohnmobile reserviert.",
+            "nl": "Deze parkeerplek is gereserveerd voor caravans of campers.",
+            "cs": "Jedná se o parkovací místo vyhrazené pro karavany nebo obytná vozidla."
+          }
+        },
+        {
+          "if": "parking_space=bus",
+          "then": {
+            "en": "This is parking space reserved for buses.",
+            "de": "Dies ist ein Stellplatz, der für Busse reserviert ist.",
+            "nl": "Deze parkeerplek is gereserveerd voor bussen.",
+            "pl": "To miejsce parkingowe jest przeznaczone dla busów.",
+            "ca": "Es tracta d'una plaça d'aparcament reservada per a autobusos.",
+            "cs": "Jedná se o parkovací místo vyhrazené pro autobusy."
+          }
+        },
+        {
+          "if": "parking_space=motorcycle",
+          "then": {
+            "en": "This is parking space reserved for motorcycles.",
+            "de": "Dies ist ein Stellplatz, der für Motorräder reserviert ist.",
+            "nl": "Deze parkeerplek is gereserveerd voor motoren.",
+            "pl": "To miejsce parkingowe jest przeznaczone dla motocykli.",
+            "ca": "Es tracta d'una plaça d'aparcament reservada per a motos.",
+            "cs": "Jedná se o parkovací místo vyhrazené pro motocykly."
+          }
+        },
+        {
+          "if": "parking_space=parent",
+          "then": {
+            "en": "This is a parking space reserved for parents with children.",
+            "de": "Dies ist ein Stellplatz, der für Eltern mit Kindern reserviert ist.",
+            "nl": "Deze parkeerplek is gereserveerd voor ouders met kinderen.",
+            "pl": "To miejsce jest przeznaczone dla rodziców z dziećmi.",
+            "ca": "Es tracta d'una plaça d'aparcament reservada per a pares amb fills.",
+            "cs": "Jedná se o parkovací místo vyhrazené pro rodiče s dětmi."
+          }
+        },
+        {
+          "if": "parking_space=staff",
+          "then": {
+            "en": "This is a parking space reserved for staff.",
+            "de": "Dies ist ein Stellplatz, der für das Personal reserviert ist.",
+            "nl": "Deze parkeerplek is gereserveerd voor personeel.",
+            "pl": "To jest miejsce parkingowe przeznaczone dla pracowników.",
+            "ca": "Es tracta d'una plaça d'aparcament reservada al personal.",
+            "cs": "Jedná se o parkovací místo vyhrazené pro zaměstnance."
+          }
+        },
+        {
+          "if": "parking_space=taxi",
+          "then": {
+            "en": "This is a parking space reserved for taxis.",
+            "de": "Dies ist ein Stellplatz, der für Taxis reserviert ist.",
+            "nl": "Deze parkeerplek is gereserveerd voor taxis.",
+            "pl": "To miejsce parkingowe jest przeznaczone dla taksówek.",
+            "ca": "Aquest espai d'aparcament està reservat per a taxi.",
+            "cs": "Jedná se o parkovací místo vyhrazené pro taxíky."
+          }
+        },
+        {
+          "if": "parking_space=trailer",
+          "then": {
+            "en": "This is a parking space reserved for vehicles towing a trailer.",
+            "de": "Dies ist ein Stellplatz, der für Fahrzeuge mit Anhänger reserviert ist.",
+            "nl": "Deze parkeerplek is gereserveerd voor voertuigen met een aanhanger.",
+            "cs": "Jedná se o parkovací místo vyhrazené pro vozidla táhnoucí přívěs."
+          }
+        },
+        {
+          "if": "parking_space=car_sharing",
+          "then": {
+            "en": "This is a parking space reserved for car sharing.",
+            "de": "Dies ist ein Stellplatz, der für Carsharing reserviert ist.",
+            "nl": "Deze parkeerplek is gereserveerd voor autodelen.",
+            "cs": "Jedná se o parkovací místo vyhrazené pro sdílení automobilů."
+          }
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "and": [
+              "amenity=parking_space"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "parking_spaces_capacity",
+      "render": {
+        "en": "This parking spaces has {capacity} spaces.",
+        "de": "Dieser Parkplatz hat {capacity} Stellplätze.",
+        "nl": "Deze parkeerplek heeft {capacity} plaatsen.",
+        "ca": "Aquests espais d'aparcament tenen {capacity} places.",
+        "cs": "Toto parkoviště má {capacity} míst."
+      },
+      "mappings": [
+        {
+          "if": "capacity=1",
+          "then": {
+            "en": "This parking space has 1 space.",
+            "de": "Dieser Parkplatz hat 1 Stellplatz.",
+            "nl": "Deze parkeerplek heeft 1 plaats.",
+            "ca": "Aquest espai d'aparcament té 1 plaça.",
+            "cs": "Toto parkoviště má 1 místo."
+          }
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "and": [
+              "amenity=parking_space"
+            ]
+          }
         ]
       }
     },
@@ -79514,12 +79406,7 @@
         "type": "string",
         "inline": true
       },
-      "condition": {
-        "or": [
-          "amenity=shelter",
-          "amenity=shelter"
-        ]
-      }
+      "condition": "amenity=shelter"
     },
     {
       "id": "shower_access",
