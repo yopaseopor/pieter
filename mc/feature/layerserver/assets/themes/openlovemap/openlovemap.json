@@ -1,13 +1,15 @@
 {
   "id": "openlovemap",
-  "hideFromOverview": true,
   "title": {
-    "en": "Open Love Map"
+    "en": "Open Love Map",
+    "de": "Open Love Map"
   },
   "description": {
-    "en": "<p><i>Love in the palm of your hand</i></p>Open Love Map lists various adult entries, such as brothels, erotic stores and stripclubs."
+    "en": "<p><i>Love in the palm of your hand</i></p>Open Love Map lists various adult entries, such as brothels, erotic stores and stripclubs.",
+    "de": "<p><i>Liebe in der Hand</i></p>Open Love Map listet verschiedene Einträge für Erwachsene, wie Bordelle, Erotikshops und Stripclubs."
   },
   "icon": "./assets/layers/stripclub/stripclub.svg",
+  "hideFromOverview": true,
   "layers": [
     "brothel",
     "stripclub",
@@ -22,10 +24,15 @@
         "=filter": [
           "open_now"
         ],
+        "name": {
+          "en": "Erotic shops",
+          "de": "Erotikgeschäfte"
+        },
         "=presets": [
           {
             "title": {
-              "en": "an erotic shop"
+              "en": "an erotic shop",
+              "de": "ein Erotikgeschäft"
             },
             "tags": [
               "shop=erotic"
@@ -39,7 +46,10 @@
       "override": {
         "minzoom": 18,
         "=presets": [],
-        "=name": null
+        "=name": null,
+        "=filter": {
+          "sameAs": "erotic-shop"
+        }
       }
     },
     {
@@ -94,7 +104,8 @@
         "=presets": [
           {
             "title": {
-              "en": "a condom vending machine"
+              "en": "a condom vending machine",
+              "de": "ein Kondomautomat"
             },
             "tags": [
               "amenity=vending_machine",
@@ -170,7 +181,8 @@
         "=presets": [
           {
             "title": {
-              "en": "an erotic cinema"
+              "en": "an erotic cinema",
+              "de": "Ein Sex-Kino"
             },
             "tags": [
               "amenity=cinema",
@@ -187,6 +199,39 @@
         "=presets": [],
         "=name": null
       }
+    },
+    "love_hotel",
+    {
+      "builtin": "hotel",
+      "override": {
+        "minzoom": 17,
+        "+tagRenderings": [
+          {
+            "id": "hotel-type",
+            "question": {
+              "en": "What type of hotel is this?",
+              "de": "Welche Art von Hotel ist das?"
+            },
+            "mappings": [
+              {
+                "if": "tourism=hotel",
+                "then": "This is a regular, tourist hotel where people stay multiple days",
+                "addExtraTags": [
+                  "amenity="
+                ]
+              },
+              {
+                "if": "amenity=love_hotel",
+                "then": "This is a love hotel where people rent rooms for sexual activity. The hotel rent rooms for a few days",
+                "addExtraTags": [
+                  "tourism="
+                ]
+              }
+            ]
+          }
+        ],
+        "=presets": []
+      }
     }
   ],
   "overrideAll": {
@@ -194,10 +239,12 @@
       {
         "id": "has_video_booth",
         "question": {
-          "en": "Does {title()} have a private video booth?"
+          "en": "Does {title()} have a private video booth?",
+          "de": "Hat {title()} eine private Videokabine?"
         },
         "questionHint": {
-          "en": "This is for use by a single person."
+          "en": "This is for use by a single person.",
+          "de": "Dies ist für die Nutzung durch eine einzelne Person vorgesehen."
         },
         "mappings": [
           {

@@ -385,8 +385,8 @@
                 "render": {
                     "special": {
                         "question": "In welke taal is de spraak van deze geldautomaat?",
-                        "render_list_item": "Deze geldautomaat heeft spraak in {language():font-bold}",
-                        "render_single_language": "Deze automaat heeft spraak in {language():font-bold}"
+                        "render_list_item": "Deze geldautomaat heeft spraak in {language()}",
+                        "render_single_language": "Deze automaat heeft spraak in {language()}"
                     }
                 }
             }
@@ -1198,6 +1198,21 @@
                     }
                 },
                 "question": "Wat is de relatieve locatie van deze parking??"
+            },
+            "fee": {
+                "mappings": {
+                    "0": {
+                        "then": "<b>Betalende</b> fietsparking"
+                    },
+                    "1": {
+                        "then": "Gratis te gebruiken"
+                    }
+                },
+                "question": "Is deze fietsenstalling gratis te gebruiken?"
+            },
+            "operator_phone": {
+                "question": "Wat is het telefoonnummer van de operator van deze fietsenstalling?",
+                "questionHint": "Men kan dit nummer bellen om bv. fietswrakken of defecten te melden"
             }
         },
         "title": {
@@ -3684,8 +3699,8 @@
                 "render": {
                     "special": {
                         "question": "In welke talen heeft deze lift gesproken tekst?",
-                        "render_list_item": "Deze lift heeft gesproken tekst in het {language():font-bold}",
-                        "render_single_language": "Deze lift heeft gesproken tekst in het {language():font-bold}"
+                        "render_list_item": "Deze lift heeft gesproken tekst in het {language()}",
+                        "render_single_language": "Deze lift heeft gesproken tekst in het {language()}"
                     }
                 }
             },
@@ -3693,8 +3708,8 @@
                 "render": {
                     "special": {
                         "question": "In welke talen heeft deze lift voelbaar schrift (braille)?",
-                        "render_list_item": "Deze lift heeft voelbaar schrift in het {language():font-bold}",
-                        "render_single_language": "Deze lift heeft voelbaar schrift in het {language():font-bold}"
+                        "render_list_item": "Deze lift heeft voelbaar schrift in het {language()}",
+                        "render_single_language": "Deze lift heeft voelbaar schrift in het {language()}"
                     }
                 }
             }
@@ -5755,6 +5770,9 @@
             "mappings": {
                 "0": {
                     "then": "Parkeerplek voor gehandicapten"
+                },
+                "1": {
+                    "then": "Parkeerplek voor opladen van elektrische voertuigen"
                 }
             },
             "render": "Parkeerplek"
@@ -7082,9 +7100,9 @@
     },
     "shops": {
         "deletion": {
-            "extraDeleteReasons": {
+            "nonDeleteMappings": {
                 "0": {
-                    "explanation": "{title()} is permanent gestopt"
+                    "then": "{title()} is permanent gestopt"
                 }
             }
         },
@@ -7536,8 +7554,8 @@
                 "render": {
                     "special": {
                         "question": "In welke talen is er voelbaar schrift (braille) voor navigatie? <img src='./assets/layers/stairs/Braille_stairs.jpg' style='height: 300px; width: auto; display: block;' />",
-                        "render_list_item": "Deze trap heeft voelbaar schrijft in {language():font-bold}",
-                        "render_single_language": "Deze trap heeft voelbaar schrijft in {language():font-bold}"
+                        "render_list_item": "Deze trap heeft voelbaar schrijft in {language()}",
+                        "render_single_language": "Deze trap heeft voelbaar schrijft in {language()}"
                     }
                 }
             }
@@ -7939,6 +7957,48 @@
             }
         },
         "tagRenderings": {
+            "gender_segregated": {
+                "mappings": {
+                    "0": {
+                        "then": "Er zijn aparte ruimtes of toiletten voor mannen en vrouwen"
+                    },
+                    "1": {
+                        "then": "Mannen en vrouwen gebruiken dezelfde ruimtes en toiletten"
+                    }
+                },
+                "question": "Zijn deze toiletten gescheiden op basis van geslacht?",
+                "questionHint": "Is er een aparte ruimte voor mannen en vrouwen en zijn deze ruimtes ook expliciet aangegeven?"
+            },
+            "menstrual_products": {
+                "mappings": {
+                    "0": {
+                        "then": "Er zijn gratis menstruatieprocten beschikbaar voor alle bezoekers van deze toiletten"
+                    },
+                    "1": {
+                        "then": "De gratis menstruatieproducten zijn enkel beschikbaar in een deel van de toiletten"
+                    },
+                    "2": {
+                        "then": "Er zijn geen gratis menstruatieproducten beschikbaar"
+                    }
+                },
+                "question": "Zijn er gratis menstruatieproducten beschikbaar?",
+                "questionHint": "Dit gaat enkel over menstruatieproducten die gratis geschikbaar zijn. Indien er bv. een verkoopautomaat met menstruatieproducten is, negeer deze dan"
+            },
+            "menstrual_products_location": {
+                "mappings": {
+                    "0": {
+                        "then": "De gratis menstruatieproducten bevinden zich in het vrouwentoilet"
+                    },
+                    "1": {
+                        "then": "De gratis menstruatieproducten bevinden zich in het mannentoilet"
+                    },
+                    "2": {
+                        "then": "De gratis menstruatieproducten bevinden zich in het rolstoeltoegankelijke toilet"
+                    }
+                },
+                "question": "Waar bevinden de gratis menstruatieproducten zich?",
+                "render": "De menstruatieproducten bevinden zich in {toilets:menstrual_products:location}"
+            },
             "opening_hours_24_7": {
                 "override": {
                     "question": "Wanneer zijn deze toiletten open?"
@@ -7968,20 +8028,20 @@
             "toilet-changing_table:location": {
                 "mappings": {
                     "0": {
-                        "then": "De luiertafel bevindt zich in de vrouwentoiletten "
+                        "then": "Er bevindt zich een luiertafel in de vrouwentoiletten "
                     },
                     "1": {
-                        "then": "De luiertafel bevindt zich in de herentoiletten "
+                        "then": "Er bevindt zich een luiertafel in de herentoiletten "
                     },
                     "2": {
-                        "then": "De luiertafel bevindt zich in de rolstoeltoegankelijke toilet "
+                        "then": "Er bevindt zich een luiertafel in de rolstoeltoegankelijke toilet "
                     },
                     "3": {
-                        "then": "De luiertafel bevindt zich in een daartoe voorziene kamer "
+                        "then": "Er bevindt zich een luiertafel in een daartoe voorziene kamer "
                     }
                 },
                 "question": "Waar bevindt de luiertafel zich?",
-                "render": "De luiertafel bevindt zich in {changing_table:location}"
+                "render": "Er bevindt zich een luiertafel in {changing_table:location}"
             },
             "toilet-charge": {
                 "freeform": {
@@ -8482,6 +8542,23 @@
         },
         "title": {
             "render": "Boom"
+        }
+    },
+    "trolley_bay": {
+        "tagRenderings": {
+            "denominations": {
+                "mappings": {
+                    "0": {
+                        "then": "Munten van 50 cent worden geaccepteerd"
+                    },
+                    "1": {
+                        "then": "Munten van 1 euro worden geaccepteerd"
+                    },
+                    "2": {
+                        "then": "Munten van 2 euro worden geaccepteerd"
+                    }
+                }
+            }
         }
     },
     "unit": {

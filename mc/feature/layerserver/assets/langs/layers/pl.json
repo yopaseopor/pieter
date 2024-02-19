@@ -2604,7 +2604,7 @@
                 "render": {
                     "special": {
                         "render_all": "Następujące języki są używane w tej szkole:{list()}",
-                        "render_single_language": "Język {language():font-bold} jest głównym językiem używanym w tej szkole"
+                        "render_single_language": "Język {language()} jest głównym językiem używanym w tej szkole"
                     }
                 }
             },
@@ -2631,6 +2631,23 @@
         },
         "title": {
             "render": "Szkoła <i>{name}</i>"
+        }
+    },
+    "trolley_bay": {
+        "tagRenderings": {
+            "denominations": {
+                "mappings": {
+                    "0": {
+                        "then": "Akceptowane są monety 50-centowe"
+                    },
+                    "1": {
+                        "then": "Akceptowane są monety 1 euro"
+                    },
+                    "2": {
+                        "then": "Akceptowane są monety 2 euro"
+                    }
+                }
+            }
         }
     },
     "unit": {

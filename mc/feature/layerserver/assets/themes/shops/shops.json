@@ -52,7 +52,10 @@
   "layers": [
     "shops",
     "pharmacy",
-    "ice_cream"
+    "ice_cream",
+    "trolley_bay"
   ],
-  "widenFactor": 3
+  "overideAll": {
+    "minzoom": 16
+  }
 }

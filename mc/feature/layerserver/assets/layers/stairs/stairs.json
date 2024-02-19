@@ -5,14 +5,16 @@
     "nl": "Trappen",
     "de": "Treppen",
     "ca": "Escales",
-    "cs": "Schody"
+    "cs": "Schody",
+    "id": "Tangga"
   },
   "description": {
     "en": "Layer showing stairs and escalators",
     "de": "Ebene mit Treppen und Rolltreppen",
     "nl": "Laag met trappen en roltrappen",
     "ca": "Capa que mostra escales i escales mecàniques",
-    "cs": "Vrstva zobrazující schody a eskalátory"
+    "cs": "Vrstva zobrazující schody a eskalátory",
+    "id": "Lapisan ini menunjukkan tangga dan eskalator"
   },
   "source": {
     "osmTags": "highway=steps"
@@ -93,7 +95,8 @@
             "nl": "Dit is een roltrap",
             "de": "Das ist eine Rolltreppe",
             "ca": "Açò és una escala mecànica",
-            "cs": "Jedná se o eskalátor"
+            "cs": "Jedná se o eskalátor",
+            "id": "Ini adalah eskalator"
           }
         },
         {
@@ -103,7 +106,8 @@
             "nl": "Dit is geen roltrap",
             "de": "Das ist keine Rolltreppe",
             "ca": "Açò no és una escala mecànica",
-            "cs": "Nejedná se o eskalátor"
+            "cs": "Nejedná se o eskalátor",
+            "id": "Ini bukan eskalator"
           }
         },
         {
@@ -113,7 +117,8 @@
             "nl": "Dit is geen roltrap",
             "de": "Das ist keine Rolltreppe",
             "ca": "Això no és una escala mecànica",
-            "cs": "Nejedná se o eskalátor"
+            "cs": "Nejedná se o eskalátor",
+            "id": "Ini bukan eskalator"
           },
           "hideInAnswer": true
         }
@@ -126,7 +131,8 @@
         "nl": "Heeft deze trap een leuning?",
         "de": "Hat die Treppe einen Handlauf?",
         "ca": "Aquestes escales tenen un passamà?",
-        "cs": "Má toto schodiště zábradlí?"
+        "cs": "Má toto schodiště zábradlí?",
+        "id": "Apakah tangga ini memiliki pegangan?"
       },
       "mappings": [
         {
@@ -136,7 +142,8 @@
             "nl": "Deze trap heeft een leuning",
             "de": "Die Treppe hat einen Handlauf",
             "ca": "Aquestes escales tenen barana",
-            "cs": "Tyto schody mají zábradlí"
+            "cs": "Tyto schody mají zábradlí",
+            "id": "Tangga ini memiliki pegangan tangan"
           }
         },
         {
@@ -146,7 +153,8 @@
             "nl": "Deze trap heeft <b>geen</b> leuning",
             "de": "Die Treppe hat <b>keinen</b> Handlauf",
             "ca": "Aquestes escales <b>no</b> tenen un passamà",
-            "cs": "Tyto schody <b>nemají</b> zábradlí"
+            "cs": "Tyto schody <b>nemají</b> zábradlí",
+            "id": "Tangga ini <b>tidak </b>memiliki pegangan tangan"
           }
         }
       ],
@@ -205,18 +213,18 @@
             "cs": "Ve kterých jazycích existuje hmatové písmo (braillské písmo) pro navigaci? <img src='./assets/layers/stairs/Braille_stairs.jpg' style='height: 300px; width: auto; display: block;' />"
           },
           "render_list_item": {
-            "en": "These stairs have tactile writing in {language():font-bold}",
-            "de": "Die Treppe hat taktile Schrift in {language():font-bold}",
-            "nl": "Deze trap heeft voelbaar schrijft in {language():font-bold}",
-            "ca": "Aquestes escales tenen escriptura tàctil en {language():font-bold}",
-            "cs": "Tyto schody mají hmatové písmo v {language():font-bold}"
+            "en": "These stairs have tactile writing in {language()}",
+            "de": "Die Treppe hat taktile Schrift in {language()}",
+            "nl": "Deze trap heeft voelbaar schrijft in {language()}",
+            "ca": "Aquestes escales tenen escriptura tàctil en {language()}",
+            "cs": "Tyto schody mají hmatové písmo v {language()}"
           },
           "render_single_language": {
-            "en": "These stairs have tactile writing in {language():font-bold}",
-            "de": "Die Treppe hat taktile Schrift in {language():font-bold}",
-            "nl": "Deze trap heeft voelbaar schrijft in {language():font-bold}",
-            "ca": "Aquestes escales tenen escriptura tàctil en {language():font-bold}",
-            "cs": "Tyto schody mají hmatové písmo v {language():font-bold}"
+            "en": "These stairs have tactile writing in {language()}",
+            "de": "Die Treppe hat taktile Schrift in {language()}",
+            "nl": "Deze trap heeft voelbaar schrijft in {language()}",
+            "ca": "Aquestes escales tenen escriptura tàctil en {language()}",
+            "cs": "Tyto schody mají hmatové písmo v {language()}"
           }
         }
       }
@@ -294,7 +302,9 @@
       "id": "incline",
       "render": {
         "en": "These stairs have an incline of {incline}",
-        "ca": "Aquestes escales tenen una inclinació de {incline}"
+        "ca": "Aquestes escales tenen una inclinació de {incline}",
+        "de": "Die Treppe hat eine Steigung von {incline}",
+        "id": "Tangga ini memiliki kemiringan sebesar {incline}"
       },
       "freeform": {
         "key": "incline",
@@ -302,14 +312,18 @@
       },
       "question": {
         "en": "What is the incline of these stairs?",
-        "ca": "Quina és la inclinació d'aquestes escales?"
+        "ca": "Quina és la inclinació d'aquestes escales?",
+        "de": "Welche Steigung hat die Treppe?",
+        "id": "Berapa kemiringan tangga ini?"
       },
       "mappings": [
         {
           "if": "incline=up",
           "then": {
             "en": "The upward direction is {direction_absolute()}",
-            "ca": "La direcció ascendent és {direction_absolute()}"
+            "ca": "La direcció ascendent és {direction_absolute()}",
+            "de": "Die Aufwärtsrichtung ist {direction_absolute()}",
+            "id": "Arah ke atas adalah {direction_absolute()}"
           },
           "hideInAnswer": true
         },
@@ -317,7 +331,9 @@
           "if": "incline=down",
           "then": {
             "en": "The downward direction is {direction_absolute()}",
-            "ca": "La direcció descendent és {direction_absolute()}"
+            "ca": "La direcció descendent és {direction_absolute()}",
+            "de": "Die Abwärtsrichtung ist {direction_absolute()}",
+            "id": "Arah ke bawah adalah {direction_absolute()}"
           },
           "hideInAnswer": true
         }

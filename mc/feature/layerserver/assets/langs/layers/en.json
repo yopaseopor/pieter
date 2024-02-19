@@ -235,6 +235,83 @@
             }
         }
     },
+    "aerialway": {
+        "description": "Various forms of transport for passengers and goods that use wires, including cable cars, gondolas, chair lifts, drag lifts, and zip lines. ",
+        "name": "Aerialways",
+        "pointRendering": {
+            "1": {
+                "label": {
+                    "render": "{name}"
+                }
+            }
+        },
+        "tagRenderings": {
+            "duration": {
+                "question": "How long takes a single journey with this elevator?",
+                "questionHint": "This excludes the waiting time.",
+                "render": "A single journey takes {duration} minutes"
+            },
+            "length": {
+                "render": "This aerialway is {_length:km} kilometer long"
+            },
+            "occupancy": {
+                "question": "How many people fit a single carriage?",
+                "render": "{aerialway:occupancy} people fit a single carriage"
+            },
+            "oneway": {
+                "mappings": {
+                    "0": {
+                        "then": "This aerialway can only be taken to the top"
+                    },
+                    "1": {
+                        "then": "This aerialway can be taken in both directions"
+                    }
+                },
+                "question": "In what direction can this aerialway be taken?"
+            },
+            "type": {
+                "mappings": {
+                    "0": {
+                        "then": "This is a cable car where the car goes up and down again on the same cable."
+                    },
+                    "1": {
+                        "then": "This is a gondola where the cars go around in continuous circles"
+                    },
+                    "2": {
+                        "then": "An open chairlift with seats to sit on and open to the outside air."
+                    },
+                    "3": {
+                        "then": "An aerialway which has both chairs and gondolas in the same continuous track"
+                    },
+                    "4": {
+                        "then": "A drag lift"
+                    },
+                    "5": {
+                        "then": "A drag lift with T-shaped carriers for two passengers at a time"
+                    },
+                    "6": {
+                        "then": "A drag lift with L-shaped bars for a single passenger at a time"
+                    },
+                    "7": {
+                        "then": "A drag lift with a platter to drag a single passenger at a time"
+                    },
+                    "8": {
+                        "then": "A tow line which which drags skieers"
+                    },
+                    "9": {
+                        "then": "A magic carpet (a conveyor belt on the ground)"
+                    },
+                    "10": {
+                        "then": "A zip line. (A touristical attraction where adventurous people go down at high speeds) "
+                    }
+                },
+                "question": "What type of aerialway is this?"
+            }
+        },
+        "title": {
+            "render": "Aerialway {name}"
+        }
+    },
     "ambulancestation": {
         "description": "An ambulance station is an area for storage of ambulance vehicles, medical equipment, personal protective equipment, and other medical supplies.",
         "name": "Map of ambulance stations",
@@ -426,6 +503,45 @@
             "render": "Artwork"
         }
     },
+    "assembly_point": {
+        "description": "This layer contains assembly points and waiting areas where all employees, passengers or a large crowd assemble in case of an emergency.",
+        "name": "Emergency assembly points",
+        "presets": {
+            "0": {
+                "title": "an assembly point"
+            }
+        },
+        "tagRenderings": {
+            "assembly_point_name": {
+                "question": "What is the name of this assembly point?",
+                "render": "This assembly point is named <b>{name}</b>"
+            },
+            "assembly_point_operator": {
+                "question": "What organization operates this assembly point?",
+                "render": "This assembly point is operated by <b>{operator}</b>"
+            },
+            "disaster_type": {
+                "mappings": {
+                    "0": {
+                        "then": "Earthquake"
+                    },
+                    "1": {
+                        "then": "Flood"
+                    },
+                    "2": {
+                        "then": "Fire"
+                    },
+                    "3": {
+                        "then": "Landslide"
+                    }
+                },
+                "question": "For which disaster type is this assembly point meant?"
+            }
+        },
+        "title": {
+            "render": "Assembly point during emergencies"
+        }
+    },
     "atm": {
         "description": "ATMs to withdraw money",
         "filter": {
@@ -530,8 +646,8 @@
                 "render": {
                     "special": {
                         "question": "In which languages does this ATM have speech output?",
-                        "render_list_item": "This ATM has speech output in {language():font-bold}",
-                        "render_single_language": "This ATM has speech output in {language():font-bold}"
+                        "render_list_item": "This ATM has speech output in {language()}",
+                        "render_single_language": "This ATM has speech output in {language()}"
                     }
                 }
             }
@@ -1343,6 +1459,21 @@
                     }
                 },
                 "question": "What is the relative location of this bicycle parking?"
+            },
+            "fee": {
+                "mappings": {
+                    "0": {
+                        "then": "One has to <b>pay</b> to use this bicycle parking"
+                    },
+                    "1": {
+                        "then": "Free to use"
+                    }
+                },
+                "question": "Are these bicycle parkings free to use?"
+            },
+            "operator_phone": {
+                "question": "What is the phone number of the operator of this bicycle parking?",
+                "questionHint": "One might be able to call this number in case of problems, e.g. to remove unmaintained bicycles"
             }
         },
         "title": {
@@ -3655,6 +3786,24 @@
         "description": "This layer visualizes directions",
         "name": "Direction visualization"
     },
+    "disaster_response": {
+        "description": "This layer contains organizations that have the main objective to help the civil population during and after natural or anthropogenic disasters by working in the affected area.",
+        "name": "Disaster response organizations",
+        "presets": {
+            "0": {
+                "title": "a disaster response organization"
+            }
+        },
+        "tagRenderings": {
+            "disaster_response_name": {
+                "question": "What is the name of this organization?",
+                "render": "This organization is named <b>{name}</b>"
+            }
+        },
+        "title": {
+            "render": "Disaster response organization"
+        }
+    },
     "doctors": {
         "description": "This layer shows doctor offices",
         "name": "Doctors",
@@ -3897,8 +4046,8 @@
                 "render": {
                     "special": {
                         "question": "In which languages does this elevator have speech output?",
-                        "render_list_item": "This elevator has speech output in {language():font-bold}",
-                        "render_single_language": "This elevator has speech output in {language():font-bold}"
+                        "render_list_item": "This elevator has speech output in {language()}",
+                        "render_single_language": "This elevator has speech output in {language()}"
                     }
                 }
             },
@@ -3929,8 +4078,8 @@
                 "render": {
                     "special": {
                         "question": "In which languages does this elevator have tactile writing (braille)?",
-                        "render_list_item": "This elevator has tactile writing in {language():font-bold}",
-                        "render_single_language": "This elevator has tactile writing in {language():font-bold}"
+                        "render_list_item": "This elevator has tactile writing in {language()}",
+                        "render_single_language": "This elevator has tactile writing in {language()}"
                     }
                 }
             }
@@ -5663,6 +5812,25 @@
             }
         }
     },
+    "love_hotel": {
+        "description": "A love hotel is a type of short-stay hotel found around the world operated primarily for the purpose of allowing guests privacy for sexual activities",
+        "name": "Love hotels",
+        "presets": {
+            "0": {
+                "description": "A love hotel is a type of short-stay hotel found around the world operated primarily for the purpose of allowing guests privacy for sexual activities.",
+                "title": "a love hotel"
+            }
+        },
+        "tagRenderings": {
+            "name": {
+                "question": "What is the name of this love hotel?",
+                "render": "This love hotel is named <b>{name}</b>"
+            }
+        },
+        "title": {
+            "render": "Love Hotel <i>{name}</i>"
+        }
+    },
     "map": {
         "description": "A map, meant for tourists which is permanently installed in the public space",
         "name": "Maps",
@@ -5949,6 +6117,18 @@
         },
         "title": {
             "render": "Memorial plaque"
+        }
+    },
+    "mountain_rescue": {
+        "description": "A building where first aid responders store material and might be on watch",
+        "name": "Mountain rescue stations",
+        "presets": {
+            "0": {
+                "title": "a mountain rescue station"
+            }
+        },
+        "title": {
+            "render": "Mountain rescue station"
         }
     },
     "nature_reserve": {
@@ -6528,6 +6708,9 @@
             "mappings": {
                 "0": {
                     "then": "Disabled Parking Space"
+                },
+                "1": {
+                    "then": "Electric Vehicle Charging Parking Space"
                 }
             },
             "render": "Parking Space"
@@ -7990,7 +8173,7 @@
                         "no_known_languages": "The main language of this school is unknown",
                         "question": "What is the main language of this school?<div class='subtle'>What language is spoken with the students in non-language related courses and with the administration?</div>",
                         "render_all": "The following languages are used in this school:{list()}",
-                        "render_single_language": "{language():font-bold} is the main language of this school"
+                        "render_single_language": "{language()} is the main language of this school"
                     }
                 }
             },
@@ -8075,9 +8258,9 @@
     },
     "shops": {
         "deletion": {
-            "extraDeleteReasons": {
+            "nonDeleteMappings": {
                 "0": {
-                    "explanation": "{title()} has closed down permanently"
+                    "then": "{title()} has closed down permanently"
                 }
             }
         },
@@ -8255,6 +8438,41 @@
         },
         "title": {
             "render": "Shower"
+        }
+    },
+    "ski_piste": {
+        "description": "Ski and snowboard pistes",
+        "name": "Ski and snowboard pistes",
+        "tagRenderings": {
+            "length": {
+                "render": "This part of the ski piste is {_length:km} kilometer long"
+            },
+            "piste_difficulty": {
+                "mappings": {
+                    "0": {
+                        "then": "Novice (green)"
+                    },
+                    "1": {
+                        "then": "Easy (blue)"
+                    },
+                    "2": {
+                        "then": "Intermediate (red)"
+                    },
+                    "3": {
+                        "then": "Advanced (black)"
+                    },
+                    "4": {
+                        "then": "Expert (orange/double black)"
+                    },
+                    "5": {
+                        "then": "Freeride"
+                    }
+                },
+                "question": "What is the difficulty of this piste?"
+            }
+        },
+        "title": {
+            "render": "Ski piste {name}"
         }
     },
     "slow_roads": {
@@ -8661,8 +8879,8 @@
                 "render": {
                     "special": {
                         "question": "In which languages is there tactile writing (braille) for navigation? <img src='./assets/layers/stairs/Braille_stairs.jpg' style='height: 300px; width: auto; display: block;' />",
-                        "render_list_item": "These stairs have tactile writing in {language():font-bold}",
-                        "render_single_language": "These stairs have tactile writing in {language():font-bold}"
+                        "render_list_item": "These stairs have tactile writing in {language()}",
+                        "render_single_language": "These stairs have tactile writing in {language()}"
                     }
                 }
             }
@@ -8841,6 +9059,11 @@
         },
         "title": {
             "render": "Stripclub"
+        }
+    },
+    "summary": {
+        "title": {
+            "render": "Summary"
         }
     },
     "surveillance_camera": {
@@ -9135,6 +9358,48 @@
             }
         },
         "tagRenderings": {
+            "gender_segregated": {
+                "mappings": {
+                    "0": {
+                        "then": "There is a separate, signposted area for men and women"
+                    },
+                    "1": {
+                        "then": "There is no separate, signposted area for men and women"
+                    }
+                },
+                "question": "Are these toilets gender-segregated?",
+                "questionHint": "Are there separate stalls or separate areas for men and women and are they signposted as such?"
+            },
+            "menstrual_products": {
+                "mappings": {
+                    "0": {
+                        "then": "Free menstrual products are available to all visitors of these toilets"
+                    },
+                    "1": {
+                        "then": "Free menstrual products are available to some visitors of these toilets"
+                    },
+                    "2": {
+                        "then": "No free menstrual products are available here"
+                    }
+                },
+                "question": "Are free, menstrual products distributed here?",
+                "questionHint": "This is only about menstrual products that are free of charge. If e.g. a vending machine is available which charges for menstrual products, ignore it for this question."
+            },
+            "menstrual_products_location": {
+                "mappings": {
+                    "0": {
+                        "then": "The free, menstrual products are located in the toilet for women"
+                    },
+                    "1": {
+                        "then": "The free, menstrual products are located in the toilet for men"
+                    },
+                    "2": {
+                        "then": "The free, menstrual products are located in the toilet for wheelchair users"
+                    }
+                },
+                "question": "Where are the free menstrual products located?",
+                "render": "The menstrual products are located in {toilets:menstrual_products:location}"
+            },
             "opening_hours_24_7": {
                 "override": {
                     "question": "When are these toilets opened?"
@@ -9164,20 +9429,20 @@
             "toilet-changing_table:location": {
                 "mappings": {
                     "0": {
-                        "then": "The changing table is in the toilet for women. "
+                        "then": "A changing table is in the toilet for women"
                     },
                     "1": {
-                        "then": "The changing table is in the toilet for men. "
+                        "then": "A changing table is in the toilet for men"
                     },
                     "2": {
-                        "then": "The changing table is in the toilet for wheelchair users. "
+                        "then": "A changing table is in the toilet for wheelchair users"
                     },
                     "3": {
-                        "then": "The changing table is in a dedicated room. "
+                        "then": "A changing table is in a dedicated room"
                     }
                 },
                 "question": "Where is the changing table located?",
-                "render": "The changing table is located at {changing_table:location}"
+                "render": "A changing table is located at {changing_table:location}"
             },
             "toilet-charge": {
                 "freeform": {
@@ -9731,6 +9996,78 @@
         "title": {
             "render": "Tree"
         }
+    },
+    "trolley_bay": {
+        "description": "Find trolley bays for shopping trolleys.",
+        "name": "Trolley Bays",
+        "presets": {
+            "0": {
+                "description": "A trolley bay for parking shopping carts.",
+                "title": "a trolley bay"
+            }
+        },
+        "tagRenderings": {
+            "cart_types": {
+                "mappings": {
+                    "0": {
+                        "then": "Trolleys with a magnifier are available"
+                    },
+                    "1": {
+                        "then": "Trolleys for wheelchair users are available"
+                    },
+                    "2": {
+                        "then": "Trolleys for children are available"
+                    },
+                    "3": {
+                        "then": "Trolleys with seats for children are available"
+                    },
+                    "4": {
+                        "then": "Trolleys with a flatbed are available"
+                    },
+                    "5": {
+                        "then": "Vertical trolleys for sheet-like goods are available"
+                    }
+                },
+                "question": "What kind of special trolleys are available?"
+            },
+            "covered": {
+                "mappings": {
+                    "0": {
+                        "then": "This trolley bay is covered"
+                    },
+                    "1": {
+                        "then": "This trolley bay is not covered"
+                    }
+                },
+                "question": "Is this trolley bay covered?"
+            },
+            "denominations": {
+                "mappings": {
+                    "0": {
+                        "then": "50 cent coins are accepted"
+                    },
+                    "1": {
+                        "then": "1 euro coins are accepted"
+                    },
+                    "2": {
+                        "then": "2 euro coins are accepted"
+                    }
+                },
+                "question": "What coins are accepted for the deposit?"
+            },
+            "deposit": {
+                "mappings": {
+                    "0": {
+                        "then": "A deposit is required for the trolleys"
+                    },
+                    "1": {
+                        "then": "No deposit is required for the trolleys"
+                    }
+                },
+                "question": "Is a deposit (e.g. a coin) required for the trolleys?"
+            }
+        },
+        "title": "Trolley Bay"
     },
     "unit": {
         "description": "Library layer with all common units.  Units can _only_ be imported from this file.",
