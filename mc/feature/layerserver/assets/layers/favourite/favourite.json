@@ -62102,7 +62102,9 @@
           "amenity=toilets",
           "amenity=toilets",
           "amenity=toilets",
-          "amenity=toilets"
+          "amenity=toilets",
+          "toilets=yes",
+          "toilets=yes"
         ]
       }
     },
@@ -62114,11 +62116,22 @@
       },
       "condition": {
         "and": [
-          "amenity=toilets",
           {
             "or": [
               "toilets:menstrual_products=limited",
               "toilets:menstrual_products:location~.+"
+            ]
+          },
+          {
+            "or": [
+              "amenity=toilets",
+              "amenity=toilets",
+              "amenity=toilets",
+              "amenity=toilets",
+              "toilets=yes",
+              "amenity=toilets",
+              "amenity=toilets",
+              "toilets=yes"
             ]
           }
         ]
@@ -71510,6 +71523,18 @@
         "or": [
           "memorial=ghost_bike",
           "memorial=ghost_bike"
+        ]
+      }
+    },
+    {
+      "id": "wikidata",
+      "render": {
+        "en": "<h3>Wikipedia page about the deceased person</h3>{wikipedia(subject:wikidata)}"
+      },
+      "condition": {
+        "and": [
+          "memorial=ghost_bike",
+          "subject:wikidata~.+"
         ]
       }
     },
