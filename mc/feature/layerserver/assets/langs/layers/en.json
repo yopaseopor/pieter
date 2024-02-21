@@ -5658,6 +5658,12 @@
             "render": "Information board"
         }
     },
+    "item_with_image": {
+        "name": "Items with at least one image",
+        "title": {
+            "render": "POI with image"
+        }
+    },
     "kerbs": {
         "description": "A layer showing kerbs.",
         "filter": {
@@ -10257,6 +10263,14 @@
                 "mappings": {
                     "0": {
                         "then": "The language was set via an URL-parameter and cannot be set by the user."
+                    }
+                }
+            },
+            "mangrove-key-import": {
+                "render": {
+                    "after": "Uploading a private key erases your current private key. If you made reviews with it, download your current private key first",
+                    "special": {
+                        "text": "Import a mangrove private key from backup"
                     }
                 }
             },
