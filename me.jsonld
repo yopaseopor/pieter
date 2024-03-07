@@ -20,7 +20,7 @@
   ],
   "foaf:knows": [
     {
-      "@id": "https://mastodon.green/@StevenRogge",
+      "@id": "https://ugent.be/~srogge/Day3.ttl",
       "foaf:name": "Steven Rogge",
       "foaf:OnlineAccount": "https://mastodon.green/@StevenRogge",
       "foaf:Organisation": "Q1137665",
