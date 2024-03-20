@@ -1,7 +1,8 @@
 {
   "@context": {
     "foaf": "http://xmlns.com/foaf/0.1/",
-    "pics":"https://pietervdvn.github.io/Pics.ttl"
+    "pics":"https://pietervdvn.github.io/Pics.ttl",
+    "photographfoaf":"https://pietervdvn.github.io/FoafPhotograph.ttl"
   },
   "@id": "https://en.osm.town/@pietervdvn",
   "@type": "foaf:Person",
