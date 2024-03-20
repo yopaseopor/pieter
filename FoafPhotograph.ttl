@@ -2,7 +2,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix v: <http://172.17.0.1:8080/Photograph.ttl#> .
+@prefix v: <http://pietervdvn.github.io/Photograph.ttl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 v:Photograph rdfs:subClassOf foaf:Image.
 v:madeBy rdfs:sameAs foaf:made.
