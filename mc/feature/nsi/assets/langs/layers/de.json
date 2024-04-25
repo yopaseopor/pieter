@@ -2166,7 +2166,7 @@
                 "title": "Ladestation für Elektrofahrräder"
             },
             "1": {
-                "title": "Ladestation für Autos"
+                "title": "Ladestation für Elektrofahrräder"
             }
         },
         "tagRenderings": {
@@ -6632,20 +6632,6 @@
             "brand": {
                 "freeform": {
                     "placeholder": "Marke"
-                },
-                "mappings": {
-                    "0": {
-                        "then": "Dies ist ein Amazon Locker"
-                    },
-                    "1": {
-                        "then": "Dies ist eine DHL-Packstation"
-                    },
-                    "2": {
-                        "then": "Dies ist eine DPD Pickup Station"
-                    },
-                    "3": {
-                        "then": "Dies ist ein PostNL-Paketschließfach"
-                    }
                 },
                 "question": "Welche Marke hat das Paketschließfach?",
                 "render": "Dies ist ein Paketschließfach von {brand}"

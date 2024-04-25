@@ -18812,7 +18812,7 @@
             "en": "This bench does <span class='subtle'>(probably)</span> not have an inscription",
             "nl": "Deze bank heeft <span class='subtle'>(waarschijnlijk)</span> geen inscriptie",
             "de": "Diese Bank hat <span class='subtle'>(wahrscheinlich)</span> keine Inschrift",
-            "fr": "Ce banc n'a <span class='subtle'>(probablement)</span> pas d'inscription",
+            "fr": "Ce banc n'a<span class='subtle'>(probablement)</span> pas d'inscription",
             "es": "Este banco <span class='subtle'>(probablemente)</span> no tiene inscripción",
             "ca": "Aquest banc <span class='subtle'>(probablement)</span> no té cap inscripció",
             "cs": "Tato lavička <span class='subtle'>(pravděpodobně)</span> nemá nápis",
@@ -21226,8 +21226,7 @@
             "cs": "Tato lavička <span class=\"subtle\">pravděpodobně</span> nemá integrované umělecké dílo",
             "pt_BR": "Esse banco <span class=\"subtle\">provavelmente</span> não tem uma obra de arte integrada",
             "es": "Este banco <span class=\"subtle\">probablemente</span> no tiene una obra de arte integrada",
-            "pt": "Este banco <span class=\"subtle\">provavelmente</span> não tem uma obra de arte integrada",
-            "fr": "Ce banc ne comporte <span class=\"subtle\">probablement</span> pas d'œuvre d'art"
+            "pt": "Este banco <span class=\"subtle\">provavelmente</span> não tem uma obra de arte integrada"
           },
           "hideInAnswer": true
         }
@@ -30556,8 +30555,7 @@
           "alsoShowIf": "shape=",
           "then": {
             "en": "This elevator has a rectangular shape",
-            "de": "Dieser Aufzug hat eine rechteckige Form",
-            "fr": "Cet ascenseur est de forme rectangulaire"
+            "de": "Dieser Aufzug hat eine rechteckige Form"
           },
           "icon": "./assets/svg/square.svg"
         },
@@ -78051,8 +78049,7 @@
             "en": "This is a classroom",
             "de": "Dies ist ein Klassenzimmer",
             "ca": "Açò és una aula",
-            "cs": "Jedná se o učebnu",
-            "fr": "C'est une salle de classe"
+            "cs": "Jedná se o učebnu"
           },
           "icon": "./assets/layers/indoors/room_class.svg"
         },
@@ -78149,8 +78146,7 @@
             "en": "This is an office",
             "de": "Dies ist ein Büro",
             "ca": "Açò és una oficina",
-            "cs": "Jedná se o kancelář",
-            "fr": "C'est un bureau"
+            "cs": "Jedná se o kancelář"
           },
           "icon": "./assets/layers/indoors/room_office.svg"
         },
@@ -83386,7 +83382,10 @@
       },
       "freeform": {
         "key": "brand",
-        "type": "string",
+        "type": "nsi",
+        "helperArgs": [
+          "amenity=parcel_locker"
+        ],
         "placeholder": {
           "en": "Brand",
           "de": "Marke",
@@ -83398,71 +83397,6 @@
         },
         "inline": true
       },
-      "mappings": [
-        {
-          "if": "brand=Amazon Locker",
-          "then": {
-            "en": "This is an Amazon Locker",
-            "de": "Dies ist ein Amazon Locker",
-            "nl": "Dit is een Amazon Locker",
-            "ca": "Açò és un Amazon Locker",
-            "fr": "C'est un Amazon Locker",
-            "pl": "To jest paczkomat Amazonu",
-            "cs": "Toto je Amazon Locker"
-          },
-          "addExtraTags": [
-            "brand:wikidata=Q16974764",
-            "brand:wikipedia=en:Amazon Locker",
-            "operator=Amazon"
-          ]
-        },
-        {
-          "if": "brand=DHL Packstation",
-          "then": {
-            "en": "This is a DHL Packstation",
-            "de": "Dies ist eine DHL-Packstation",
-            "nl": "Dit is een DHL Packstation",
-            "ca": "Açò és un DHL Packstation",
-            "cs": "Toto je DHL Packstation"
-          },
-          "addExtraTags": [
-            "brand:wikidata=Q1766703",
-            "brand:wikipedia=de:Packstation",
-            "operator=DHL"
-          ],
-          "hideInAnswer": "_country!=de"
-        },
-        {
-          "if": "brand=Pickup Station",
-          "then": {
-            "en": "This is a DPD Pickup Station",
-            "de": "Dies ist eine DPD Pickup Station",
-            "nl": "Dit is een DPD Pickup Station",
-            "fr": "C'est une DPD Pickup Station",
-            "cs": "Toto je DPD Pickup Station"
-          },
-          "addExtraTags": [
-            "operator=DPD"
-          ],
-          "hideInAnswer": "_country!=pl"
-        },
-        {
-          "if": "brand=PostNL",
-          "then": {
-            "en": "This is a PostNL Parcel Locker",
-            "nl": "Dit is een PostNL pakketautomaat",
-            "de": "Dies ist ein PostNL-Paketschließfach",
-            "ca": "Açò és una bústia intel·ligent de PostNL",
-            "fr": "C'est un PostNL Parcel Locker",
-            "pl": "To jest paczkomat PostNL",
-            "cs": "Toto je PostNL Parcel Locker"
-          },
-          "addExtraTags": [
-            "operator=PostNL"
-          ],
-          "hideInAnswer": "_country!=nl"
-        }
-      ],
       "render": {
         "en": "This is a {brand} parcel locker",
         "de": "Dies ist ein Paketschließfach von {brand}",
