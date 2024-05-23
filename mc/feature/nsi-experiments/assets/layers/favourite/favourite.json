@@ -31072,10 +31072,6 @@
       },
       "freeform": {
         "key": "brand",
-        "type": "nsi",
-        "helperArgs": [
-          "amenity=public_bookcase"
-        ],
         "placeholder": {
           "en": "Name of the network"
         },
@@ -64038,6 +64034,43 @@
         ]
       },
       "invalidValues": "shop=yes"
+    },
+    {
+      "id": "shops_brand",
+      "question": {
+        "en": "What is the brand of this shop?"
+      },
+      "render": {
+        "en": "Part of <b>{brand}</b>"
+      },
+      "freeform": {
+        "key": "brand",
+        "inline": true
+      },
+      "mappings": [
+        {
+          "if": "not:brand=yes",
+          "then": {
+            "en": "This shop does not have a specific brand, it is not part of a bigger chain"
+          }
+        }
+      ],
+      "condition": {
+        "and": [
+          {
+            "and": [
+              {
+                "or": [
+                  "shop~*",
+                  "craft=shoe_repair",
+                  "craft=key_cutter"
+                ]
+              },
+              "shop!=mall"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "second_hand",

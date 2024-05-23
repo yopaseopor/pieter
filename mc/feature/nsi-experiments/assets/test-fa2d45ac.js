@@ -1,2 +1,0 @@
-import"./UIEventSource-19d278ab.js";import{S as o,i as e,s as t,k as n}from"./index-9229ee1d.js";import{N as a}from"./NameSuggestionIndex-52e2e878.js";import"./Translation-57188e13.js";import"./LocalStorageSource-2e204a66.js";class i extends o{constructor(s){super(),e(this,s,null,null,t,{})}}const r=a.get(),l=r.getSuggestionsFor("brands/shop/second_hand",["be"]);console.log(l);new n(i).AttachTo("maindiv");
-//# sourceMappingURL=test-fa2d45ac.js.map

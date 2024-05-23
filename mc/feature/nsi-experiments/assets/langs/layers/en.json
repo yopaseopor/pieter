@@ -8682,6 +8682,15 @@
             }
         },
         "tagRenderings": {
+            "brand": {
+                "mappings": {
+                    "0": {
+                        "then": "This shop does not have a specific brand, it is not part of a bigger chain"
+                    }
+                },
+                "question": "What is the brand of this shop?",
+                "render": "Part of <b>{brand}</b>"
+            },
             "copyshop-print-sizes": {
                 "mappings": {
                     "0": {
