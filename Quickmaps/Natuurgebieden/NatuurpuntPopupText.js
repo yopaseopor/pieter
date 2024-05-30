@@ -165,7 +165,7 @@ function popupText(tags, area){
 
 
 var natuurpuntIcon = L.icon({
-    iconUrl: 'https://pietervdvn.github.io/Quickmaps/Natuurgebieden/resources/Natuurpunt.jpg',
+    iconUrl: 'https://yopaseopor.github.io/pieter/Quickmaps/Natuurgebieden/resources/Natuurpunt.jpg',
 
     iconSize:     [50, 50], // size of the icon
     iconAnchor:   [25, 35], // point of the icon which will correspond to marker's location
@@ -173,7 +173,7 @@ var natuurpuntIcon = L.icon({
 });
 
 var anbIcon = L.icon({
-    iconUrl: 'https://pietervdvn.github.io/Quickmaps/Natuurgebieden/resources/ANB.jpg',
+    iconUrl: 'https://yopaseopor.github.io/pieter/Quickmaps/Natuurgebieden/resources/ANB.jpg',
 
     iconSize:     [50, 50], // size of the icon
     iconAnchor:   [25, 35], // point of the icon which will correspond to marker's location
@@ -182,7 +182,7 @@ var anbIcon = L.icon({
 
 
 var info = L.icon({
-    iconUrl: 'https://pietervdvn.github.io/Quickmaps/Natuurgebieden/resources/info.png',
+    iconUrl: 'https://yopaseopor.github.io/pieter/Quickmaps/Natuurgebieden/resources/info.png',
 
     iconSize:     [26, 26], // size of the icon
     iconAnchor:   [13, 13], // point of the icon which will correspond to marker's location
@@ -190,7 +190,7 @@ var info = L.icon({
 });
 
 var birdhide = L.icon({
-    iconUrl: 'https://pietervdvn.github.io/Quickmaps/Natuurgebieden/resources/birdhide.png',
+    iconUrl: 'https://yopaseopor.github.io/pieter/Quickmaps/Natuurgebieden/resources/birdhide.png',
 
     iconSize:     [26, 26], // size of the icon
     iconAnchor:   [13, 13], // point of the icon which will correspond to marker's location
@@ -198,7 +198,7 @@ var birdhide = L.icon({
 });
 
 var birdhideShelter = L.icon({
-    iconUrl: 'https://pietervdvn.github.io/Quickmaps/Natuurgebieden/resources/birdshelter.png',
+    iconUrl: 'https://yopaseopor.github.io/pieter/Quickmaps/Natuurgebieden/resources/birdshelter.png',
 
     iconSize:     [26, 26], // size of the icon
     iconAnchor:   [13, 13], // point of the icon which will correspond to marker's location
